@@ -153,17 +153,12 @@ color: black;
              
                  
              }
-        #b{
-            display: none;transform: translate(400px,10px);
-        }
         #f1{
-            font-size: 200px;
-            transform: scale(3);
-            display: inline-block;
+            transform: translate(90px,90px);
         }
         #f2{
-           
-            transform: translate(550px,250px);
+            transform: translate(57px,90px);
+
         }
     }
 </style>              
@@ -186,35 +181,73 @@ color: black;
         </script>
         <div id="gardencontent">
             
-        
+        <div id ="pots">
             
-            
-<div id="b">
-<script>(function(t,e,s,n){var o,a,c;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),a=o[o.length-1],c=e.createElement(s),c.type="text/javascript",c.async=!0,c.id=n,c.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/tRaiETqnLgj758hTBazgd7nCalyzwjHdklejm7zVCmliIufoRRh2f1Ej3zV4sFqP.js"].join(""),a.parentNode.insertBefore(c,a))})(window,document,"script","smcx-sdk");</script>   
-        
-</div>
-            <div id="f2">
-<input id="f1" type="button" name="answer" value="Start Your Garden" onclick="myFunction()" />
+            <div id=button1 >
+                
+                <h3>Plant info: Tomato </h3>
+                <h3>Price: $5
+              </h3>
+              <h3>Soil type: Normal   
+              </h3>
+                <h3>harvest date: Next week      
+            </h3>
+                <h3>watering:Add water 30mins later
+             </h3>
             </div>
+                
+<div id="f1">
+<input id="f1" type="button" name="answer" value="More Info" onclick="myFunction()" />
+    </div>
+            
+            <div id="f2">
+<br>
+<input id="f2"type="button" name="answer" value="Close Info" onclick="myFunction1()" />
+            </div>
+        <div id ="pot-ellipse">
+       
         </div>
      
             
+        <div id ="pot-ellipse1">
+        
+        </div>
+   
+            
+        <div id ="pot-ellipse2">
        
+        </div>
+    
+            
+        <div id ="pot-ellipse3">
+        
+        </div>
+   
+        
+                
+        </div>
             
         
-        <script>
-            function myFunction() {
-  
-   document.getElementById('b').style.display = "block";}
-            function myFunction() {
-  
-   document.getElementById('b').style.display = "block";}
-    </script>
+        </div> 
         
+        <script>
      
-     
 
 
+function myFunction() {
+  
+   document.getElementById('button1').style.display = "block";
+    document.getElementById('pot-ellipse').style.display = "none";
 
+
+    
+}function myFunction1() {
+  
+   document.getElementById('button1').style.display = "none";
+    document.getElementById('pot-ellipse').style.display = "block";
+
+
+    
+}</script>
     </body>
     </html>
