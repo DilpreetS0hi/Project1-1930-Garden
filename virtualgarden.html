@@ -4,20 +4,21 @@
     <title>GardenAid</title>
     <meta charset="utf-8"/>
  
-    <style>
+    <style type="text/css">
         #rectangle{
 position: absolute;
 width: 100%;
-height: 25%;
+height: 30%;
 left: 0px;
 top: 0px;
+margin: 0px;
 background: #753DBB;
         }
 #rectangle2{
 position: absolute;
 width:  20%;
-height: 7%;
-margin-left: -0.5%;
+height: 15%;
+/*margin-left: -0.5%;*/
 margin-top: 45px;
 background: #1BB634;
 border: 2px solid #FFF9F9;
@@ -26,7 +27,7 @@ box-sizing: border-box;
 #rectangle21{
 position: absolute;
 width: 20%;
-height: 7%;
+height: 15%;
 margin-left: 19.5%;
 margin-top: 45px;
 background: #1BB634;
@@ -36,7 +37,7 @@ box-sizing: border-box;
 #rectangle22{
 position: absolute;
 width: 20%;
-height: 7%;
+height: 15%;
 margin-left: 39.5%;
 margin-top: 45px;
 background: #1BB634;
@@ -46,7 +47,7 @@ box-sizing: border-box;
 #rectangle23{
 position: absolute;
 width: 20%;
-height: 7%;
+height: 15%;
 margin-left: 59.5%;
 margin-top: 45px;
 background: #1BB634;
@@ -56,7 +57,7 @@ box-sizing: border-box;
 #rectangle24{
 position: absolute;
 width: 20%;
-height: 7%;
+height: 15%;
 margin-left: 79.5%;
 margin-top: 45px;
 background: #1BB634;
@@ -77,53 +78,98 @@ border-radius: 50%;
 position: absolute;
 width: 198px;
 height: 50px;
-margin-left: 85%;
+margin-left: 75%;
 top: 33px;
 background: #FFFDFD;
 box-sizing: border-box;
 border-radius: 30px;
+display:inline-block;
+padding-left: 2%;
+}
+
+#rectangle3 > img{
+float:left;
+width:15%;
+position: relative;
+top:20%;
+
 }
 #logo{
 margin-left: 1px;
 border-radius: 50%;
 }
 
-        #rectangle5{
-            position: absolute;
+        #footer{
+position: absolute;
+top:93%;
 width: 100%;
-height: 100px;
-margin-left: -8px;
-margin-top: 900px;
+height: 7%;
 background-color: #1BB634;
 border-radius: 4px;
         }
         
         #header{
         width:100%;
+        height:300px;
+        margin:0px;
+        padding:0px;
+        position:absolute;
+        top:-220px;
+        background-color:gray;
         }
         
         body{
-        display:flex;
-        flex-direction: column;
+        /*display:flex;
+        flex-direction: column;*/
         }
         
 #gardencontent{
         width: 100%;
-        height:810px;
+        height:1010px;
         background-color: lime;
         position:absolute;
-        top:27%;
+        top:30%;
         }
         
-        .pot-ellipse{
+        #pot-square{
         width: 107px;
-        height: 101px;
+        height: 107px;
         background: #C4C4C4;
         border: 2px solid #FFFCFC;
-        border-radius: 50%; 
         margin:5%;
         }
+
+        #pot-inner-square{
+        height:60%;
+        width:60%;
+        outline: 2px solid white;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
+
+        #pot-inner-square-2{
+        height:60%;
+        width:60%;
+        outline: 2px solid white;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
         
+        .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
         
         #pots{
         position: absolute;
@@ -132,10 +178,23 @@ border-radius: 4px;
         background-color: blue;
         height:40%;
         width:50%;
-        display: flex;
         }
         
-        .pot-button{
+        #pot-button{
+        position: relative;
+        top:-70%;
+        right:8%;
+        width: 20px;
+        height: 20px;
+        background: #C4C4C4;
+        border: 2px solid #FFFCFC;
+        border-radius: 50%;
+        }
+
+        #pot-button-2{
+        position: relative;
+        top:-70%;
+        right:8%;
         width: 20px;
         height: 20px;
         background: #C4C4C4;
@@ -162,14 +221,40 @@ border-radius: 4px;
         position:absolute;
         left:10%;
         top:10%;
+        overflow:auto;
         }
         
-        other-veg-container{
-        width:25%;
-        height:100px;
+        #other-veg-container{
+        display: flex;
+        width:35%;
+        height:20%;
+        position:absolute;
+        left:23%;
+        top:5%;
         background-color:blue;
         }
+
+        #third-veg-container{
+        position: absolute;
+        left:22.5%;
+        top:80%;
+        background-color: blue;
+        height:40%;
+        width:50%;
+        display: flex;
+        }
+
+        #add-delete-buttons{
+        width: 10%;
+        height:5%;
+        display:flex;
+        padding:2%;
+        margin:2%;
+        }
+
         
+
+
         
         
         
@@ -179,49 +264,135 @@ border-radius: 4px;
 
     
     <body>
-<h1>GardenAid Team
-        </h1>      
-        <small>Roy</small>
+
+        <div id="gardencontent">
         <div id = "header">
+        <h1>GardenAid Team
+        </h1>      
         <div id="rectangle"></div>
         <div id="rectangle2"></div>
         <div id="rectangle21"></div>
         <div id="rectangle22"></div>
         <div id="rectangle23"></div>
         <div id="rectangle24"></div>
-        <div id="ellipse"><img id="logo" src="logo.png" alt="Logo" height="100px" width="105px"/></div>
-        <div id="rectangle3"><img id="sign" src="sign.png" alt="Sign" height="50px" width="50px"/></div>
+        <div id="ellipse"></div>
+        <div id="rectangle3">
+        <img src="img/icons8-google-web-search-50.png">
+        <p>search...</p>      
+        </div>
         </div>
         
-        <div id="gardencontent">
-        
         <div id="border">
+
+        <div id="add-delete-buttons">
+        <img src="img/icons8-cancel-50 (1).png">
+        <img src="img/icons8-plus-50.png">
+
+        </div>
             
         <div id="other-veg-container">
-        <div class ="pot-ellipse">
-        <span style width = 10px></span>
-        <div class ="pot-button">
+        <div id ="pot-square">
+        <div id ="pot-inner-square-2">
+        <img src= "img/tomato-md.png" height="100%">
+        </div>
+        <div id ="pot-button-2">
+        </div>
+        </div>
+
+        <div id ="pot-square">
+        <div id ="pot-inner-square-2">
+        <img src= "img/tomato-md.png" height="100%">
+        </div>
+        <div id ="pot-button-2">
+        </div>
         </div>
         </div>
             
         <div id ="pots">
-        <div class ="pot-ellipse">
-        <div class ="pot-button">
+        
+        <div class = row>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = "100%">
+        </div>
+        <div id ="pot-button">
         </div>
         </div>
-            
-        <div class ="pot-ellipse">
-        <div class ="pot-button">
+        </div>
+          
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
         </div>
         </div>
-            
-        <div class ="pot-ellipse">
-        <div class ="pot-button">
+        </div>
+
+        <div class = column> 
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
         </div>
         </div>
-            
-        <div class ="pot-ellipse">
-        <div class ="pot-button">
+        </div>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+        </div>
+
+                <div class = row>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = "100%">
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+          
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column> 
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
         </div>
         </div>
         
@@ -235,14 +406,107 @@ border-radius: 4px;
         <h1>harvest date</h1><br>
         <h1>watering</h1><br>
         </div>
+        
+        <div id="third-veg-container">
+        <div class = row>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = "100%">
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+          
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column> 
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+        </div>
+
+                <div class = row>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = "100%">
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+          
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column> 
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+
+        <div class = column>
+        <div id ="pot-square">
+        <div id ="pot-inner-square">
+        <img src= "img/tomato-md.png" height="100%" width = 100%>
+        </div>
+        <div id ="pot-button">
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
         </div>
         
+
         <div id ="footer">
-        <div id="rectangle5">
-        </div>
             
         </div>
+        </div>
+        
+
+
+        
+        
+        
 
         
         
