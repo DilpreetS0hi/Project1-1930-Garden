@@ -21,24 +21,44 @@
             margin-top: 0%;
             float: left;
         }
-        #menubutton{
-            position: absolute;
-            width: 75px;
-            height: 70px;
-            left: 4%;
-            top: 4%;
-            border-radius: 50%;
-            background-color: transparent;
-            border: Transparent;
-        }
-        #menubuttonimage{
-            position: absolute;
-            margin-left: -50%;
-            margin-top: -50%;
-            border-radius: 50%;
-            height: 70px;
-            width: 75px;
-            opacity: 0.5;
+        .sidebar {
+              height: 100%;
+              width: 0;
+              position: fixed;
+              z-index: 1;
+              top: 0;
+              left: 0;
+              background-color: #111;
+              overflow-x: hidden;
+              transition: 0.5s;
+              padding-top: 70px;
+            }
+        .sidebar a {
+              padding: 8px 8px 8px 32px;
+              text-decoration: none;
+              font-size: 25px;
+              color: #818181;
+              display: block;
+              transition: 0.3s;
+            }
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+     #menubutton{
+            width: 60px;
+            margin-top: 1%;
+            margin-left: 2%;
+         float: left;
+            
         }
         #innerheader{
             width: 80%;
@@ -139,7 +159,20 @@
     <body>
         <div id="firstpage">
         <div id="header">
+                <img onclick="openNav()" src="https://static.thenounproject.com/png/966948-200.png" id="menubutton">
             <div id="innerheader">
+                
+                <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="#Reminder">Reminder</a>
+  <a href="#Starred">Starred</a>
+  <a href="#Offline">Offline</a>
+        <a href="#Bin">Bin</a>
+        <a href="#Notification">Notification</a>
+        <a href="#Settings">Settings</a>
+        <a href="#Help & feedback">Help & Feedback</a>
+        <a href="#Share">Share</a>
+</div>
         <span id="heading">Garden-Aid</span>
         <nav>
             <button onclick="Home">Home</button>
@@ -157,5 +190,15 @@
             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#Sign"><p>Sign in</p></a>
         </div>
         </div>
+        <script>
+        
+        function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+        }
+        
+        function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+        </script>
     </body>
 </html>
