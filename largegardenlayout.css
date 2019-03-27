@@ -1,6 +1,11 @@
 <style>
 body{
     margin: 0 auto;
+    width: cover;
+    background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    position: relative;
 }
 #firstpage{
     width: cover;
@@ -87,6 +92,9 @@ nav>button:hover #about-dropdown-content{
 }
 #middle{
     margin-left: 40%;
+}
+#border{
+    position: relative;
 }
 #middle>a{
     display: inline-block;
