@@ -1,10 +1,6 @@
 <style>
 body{
     margin: 0 auto;
-    width: cover;
-    background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
-    background-repeat: no-repeat;
-    background-size: 120% 100%;
     position: relative;
 }
 #firstpage{
@@ -93,9 +89,6 @@ nav>button:hover #about-dropdown-content{
 #middle{
     margin-left: 40%;
 }
-#border{
-    position: relative;
-}
 #middle>a{
     display: inline-block;
     background: #3FCCF8;
@@ -133,70 +126,6 @@ a>p{
     color: white;
     margin-left: 4%;
 }
-#secondpageline1{
-    font-size: 45px;
-    margin-left: 10%;
-    margin-top: 3%;
-    font-weight: 600;
-}
-#secondpageline2{
-    font-size: 25px;
-    margin-left: 18%;
-    margin-right: 26%;
-    text-align: center;
-    margin-top: 1.5%;
-    color: gray;
-}
-#secondpagesecondpart{
-    margin-top: 5%;
-}
-#secondpageimage1{
-    margin-left: 6%;
-    margin-top: 4%;
-}
-#secondpageabout{
-    font-size: 40px;
-    margin-left: 65%;
-    margin-top: -22%;
-    font-weight: bold;
-}
-#secondpageaboutPara{
-    margin-top: 3%;
-    margin-left: 55%;
-    font-size: 25px;
-    text-align: center;
-    margin-right: 15%;
-}
-#secondpagethirdpart{
-    margin-top: 30%;
-}
-#secondpagegardenplan{
-    margin-top: -10%;
-    margin-left: 20%;
-    font-size: 40px;
-    font-weight: bold;
-}
-#gardenplanhref{
-    margin-top: 5%;
-    margin-left: -3%;
-    background: #3FCCF8;
-    margin-right: 76%;
-    border-radius: 30px;
-}
-#gardenplanhref>a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-left: 7%;
-    color: white;
-}
-#gardenplanhref:hover{
-    opacity: 0.8;
-}
-#secondpageimage2{
-    margin-right: 5%;
-    float: right;
-    margin-top: -15%;
-}
 /*#footer{
     margin-top: 12%;
     height: 90px;
@@ -224,25 +153,49 @@ border-radius: 4px;
         
         
 #gardencontent{
-        width: 100%;
-        height:1010px;
-        background-color: lime;
-        position:absolute;
-        top:15.25%;
+        width: 80%;
+        height:700px;
+        margin-left: 10%;
+        margin-top: 4%;
+        background-color: rgb(0,0,0,0.1);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        position:relative;
         }
+                        #border{
+                        height:96.5%;
+                        width:98%;
+                        left:6%;
+                        top:2%;
+                        overflow:auto;
+                        position: relative;
+                        border-radius: 20px;
+                        background-color: rgb(0,255,0,0);
+                        <!--border: 3px solid rgb(0,255,0,0);-->
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                        margin-left: -5%;
+                        }
+        
         
         #pot-square{
         width: 107px;
         height: 107px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        border: 3px solid rgb(0,255,0,0.9);
+        background: rgb(10,255,10,00);
         margin:5%;
+        border-radius: 20px;
         }
-
+#pot-square{
+    margin-left: 15%;
+    margin-top: 3%;
+}
+#pot-square:hover{
+    background: rgb(0,255,0,0.6);
+}
         #pot-inner-square{
         height:60%;
         width:60%;
-        outline: 2px solid white;
         position:relative;
         top:20%;
         left:15%;
@@ -251,7 +204,6 @@ border-radius: 4px;
         #pot-inner-square-2{
         height:60%;
         width:60%;
-        outline: 2px solid white;
         position:relative;
         top:20%;
         left:15%;
@@ -269,25 +221,28 @@ border-radius: 4px;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+    margin-left: 1.5%;
+    margin-top: 3%;
 }
         
         #pots{
         position: absolute;
-        left:22.5%;
+        left:2%;
         top:30%;
-        background-color: rgb(189,105,105);
-        height:40%;
-        width:50%;
+        background-color: rgb(0,255,0,0.3);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        height:45%;
+        width:55%;
         }
-        
         #pot-button{
         position: relative;
         top:-70%;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
         }
 
@@ -297,19 +252,9 @@ border-radius: 4px;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
-        }
-        
-        #border{
-        height:80%;
-        width:80%;
-        outline: 5px dotted white;
-        position:absolute;
-        left:10%;
-        top:10%;
-        overflow:auto;
         }
         
         #other-veg-container{
@@ -317,9 +262,11 @@ border-radius: 4px;
         width:35%;
         height:20%;
         position:absolute;
-        left:23%;
-        top:5%;
-        background-color: rgb(189,105,105);;
+        left:2%;
+        top:4%;
+        background-color: rgb(0,255,0,0.3);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
         }
 
         #third-veg-container{
@@ -342,14 +289,15 @@ border-radius: 4px;
 
         @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|B612|Lora');
         #rightContent{
-            background-color: whitesmoke;
+            background-color: white;
             float: right;
-            height: 60vh;
-            width: 20%;
+            height: 80%;
+            width: 30%;
             border: 3px black solid;
             position: relative;
-            top:15%;
-            right:5%;
+            top:5%;
+            right:2%;
+            border-radius: 20px;
         }
        
         #like{
@@ -366,8 +314,12 @@ border-radius: 4px;
             list-style-type: none;
             line-height: 200%;
             font-size: 18pt;
+            font-weight: bold;
             
         }
+li{
+    margin-top: 5%;
+}
 
         
 
