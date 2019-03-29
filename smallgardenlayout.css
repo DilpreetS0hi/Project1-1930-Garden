@@ -1,13 +1,14 @@
 <style>
+
 body{
     margin: 0 auto;
 }
 #firstpage{
-    width: cover;
     background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
-    position: relative;
+    position: absolute;
+    width: 100%;
 }
 #header{
     height: 100px;
@@ -123,49 +124,6 @@ a>p{
     margin-top: 28%;
     color: white;
     margin-left: 4%;
-}
-#secondpageline1{
-    font-size: 45px;
-    margin-left: 10%;
-    margin-top: 3%;
-    font-weight: 600;
-}
-#secondpageline2{
-    font-size: 25px;
-    margin-left: 18%;
-    margin-right: 26%;
-    text-align: center;
-    margin-top: 1.5%;
-    color: gray;
-}
-#secondpagesecondpart{
-    margin-top: 5%;
-}
-#secondpageimage1{
-    margin-left: 6%;
-    margin-top: 4%;
-}
-#secondpageabout{
-    font-size: 40px;
-    margin-left: 65%;
-    margin-top: -22%;
-    font-weight: bold;
-}
-#secondpageaboutPara{
-    margin-top: 3%;
-    margin-left: 55%;
-    font-size: 25px;
-    text-align: center;
-    margin-right: 15%;
-}
-#secondpagethirdpart{
-    margin-top: 30%;
-}
-#secondpagegardenplan{
-    margin-top: -10%;
-    margin-left: 20%;
-    font-size: 40px;
-    font-weight: bold;
 }
 #gardenplanhref{
     margin-top: 5%;
