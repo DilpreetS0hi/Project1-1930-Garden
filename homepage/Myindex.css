@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<!-- saved from url=(0056)file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>GardenAid</title>
-    
- 
-    <style>
         body{
             margin: 0 auto;
         }
@@ -149,6 +142,7 @@
         #secondpageimage1{
             margin-left: 6%;
             margin-top: 4%;
+         
         }
         #secondpageabout{
             font-size: 40px;
@@ -191,10 +185,10 @@
         #secondpageimage2{
             margin-right: 5%;
             float: right;
-            margin-top: -15%;
+            margin-top: -10%;
         }
         #footer{
-            margin-top: 12%;
+            margin-top: 30%;
             height: 90px;
             background: Black;
         }
@@ -206,123 +200,3 @@
             font-size: 25px;
             color: white;
         }
-    </style>
-<!--
-     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
-<link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    
-<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
-    
-
-<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAgd-u-URHUzbFcz0YDmHZ8YAmL8ggP4y0",
-    authDomain: "garden-2301c.firebaseapp.com",
-    databaseURL: "https://garden-2301c.firebaseio.com",
-    projectId: "garden-2301c",
-    storageBucket: "garden-2301c.appspot.com",
-    messagingSenderId: "871298628058"
-  };
-  firebase.initializeApp(config);
-</script>
--->
-    </head>
-    <body>
-        <div id="firstpage">
-        <div id="header">
-            <div id="innerheader">
-        <span id="heading">Garden-Aid</span>
-        <nav>
-            <button onclick="Home">Home</button>
-            <button onclick="Garden Planning">Garden Planning</button>
-            <button onclick="News">News</button>
-            <button onclick="Photos of the Day">Photos of the Day</button>
-        <button onclick="About">About <div id="about-dropdown-content">
-  <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Who Are We</a>
-  <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Contacts</a>
-  <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">More about us</a>
-            </div></button>
-        </nav></div>
-        </div>
-        <div id="middle">
-        <div id="firstpagemaincontent1">Sustainability</div>
-        <div id="firstpagemaincontent2">STARTS WITH YOU</div>
-            <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#Sign"><p>
-                
-                Sign in</p></a>
-<!--
-             <div id="firebaseui-auth-container"></div>
-        <div id="loader">Loading...</div>
--->
-        </div>
-        </div>
-        <div id="secondpage">
-        <div id="secondpagefirstpart">
-        <div id="secondpageline1">We conserve land through outreach, restoration, and research.</div>
-        <div id="secondpageline2">Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</div>
-        </div>
-        <div id="secondpagesecondpart">
-        <img id="secondpageimage1" src="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid_files/gettyimages-109257187-612x612.jpg" alt="image">
-        <div id="secondpageabout">ABOUT</div>
-        <div id="secondpageaboutPara">Find out about our organization, mission, our methods, and the results of our decades of advocacy.</div>
-        </div>
-        <div id="secondpagethirdpart">
-        <div id="secondpagegardenplan">Garden Planner
-            <div id="gardenplanhref"><a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#gardenplanhref">Start Garden Planning</a></div></div>
-        <img id="secondpageimage2" src="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid_files/gettyimages-109257187-612x612.jpg" alt="image">
-        </div>
-        </div>
-        <div id="footer">
-            <div id="footerfiller"></div>
-            <div id="footercontent">Powered by BCIT</div>
-        </div>
-    
-        
-        <script> // Initialize the FirebaseUI Widget using Firebase.
-       var ui = new firebaseui.auth.AuthUI(firebase.auth());
-    </script>   
-    
-    
-    
-    <!-- The surrounding HTML is left untouched by FirebaseUI.
-     Your app may use that space for branding, controls and other customizations.-->
-  
-   
-    
-    
-<!--
-    <script>var uiConfig = {
-  callbacks: {
-    signInSuccessWithAuthResult: function(authResult, redirectUrl) {
-      // User successfully signed in.
-      // Return type determines whether we continue the redirect automatically
-      // or whether we leave that to developer to handle.
-      return true;
-    },
-    uiShown: function() {
-      // The widget is rendered.
-      // Hide the loader.
-      document.getElementById('loader').style.display = 'none';
-    }
-  },
-  // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
-  signInFlow: 'popup',
-  signInSuccessUrl: 'index.html',
-  signInOptions: [
-    // Leave the lines as is for the providers you want to offer your users.
-    
- 
-    firebase.auth.EmailAuthProvider.PROVIDER_ID
-  ],
-  // Terms of service url.
-  tosUrl: 'index.html',
-  // Privacy policy url.
-  privacyPolicyUrl: 'index.html'
-};
-    </script>
-    <script>// The start method will wait until the DOM is loaded.
-ui.start('#firebaseui-auth-container', uiConfig);</script>
--->
-    </body></html>
