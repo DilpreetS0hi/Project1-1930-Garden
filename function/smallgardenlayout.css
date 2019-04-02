@@ -1,13 +1,14 @@
 <style>
+
 body{
     margin: 0 auto;
 }
 #firstpage{
-    width: cover;
     background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
-    position: relative;
+    position: absolute;
+    width: 100%;
 }
 #header{
     height: 100px;
@@ -15,7 +16,6 @@ body{
     background: black;
     opacity: 0.4;
     margin-top: 0%;
-    /*float: left;*/
     position: relative;
     top:-15%;
 }
@@ -125,49 +125,6 @@ a>p{
     color: white;
     margin-left: 4%;
 }
-#secondpageline1{
-    font-size: 45px;
-    margin-left: 10%;
-    margin-top: 3%;
-    font-weight: 600;
-}
-#secondpageline2{
-    font-size: 25px;
-    margin-left: 18%;
-    margin-right: 26%;
-    text-align: center;
-    margin-top: 1.5%;
-    color: gray;
-}
-#secondpagesecondpart{
-    margin-top: 5%;
-}
-#secondpageimage1{
-    margin-left: 6%;
-    margin-top: 4%;
-}
-#secondpageabout{
-    font-size: 40px;
-    margin-left: 65%;
-    margin-top: -22%;
-    font-weight: bold;
-}
-#secondpageaboutPara{
-    margin-top: 3%;
-    margin-left: 55%;
-    font-size: 25px;
-    text-align: center;
-    margin-right: 15%;
-}
-#secondpagethirdpart{
-    margin-top: 30%;
-}
-#secondpagegardenplan{
-    margin-top: -10%;
-    margin-left: 20%;
-    font-size: 40px;
-    font-weight: bold;
-}
 #gardenplanhref{
     margin-top: 5%;
     margin-left: -3%;
@@ -189,54 +146,34 @@ a>p{
     float: right;
     margin-top: -15%;
 }
-/*#footer{
-    margin-top: 12%;
-    height: 90px;
-    background: Black;
-}
-#footerfiller{
-    height: 30px;
-}
-#footercontent{
-    text-align: center;
-    font-size: 25px;
-    color: white;
-}*/
-
-
-        #footer{
-position: absolute;
-top:93%;
-width: 100%;
-height: 7%;
-background-color: #1BB634;
-border-radius: 4px;
-        }
         
         
         
 #gardencontent{
-        width: 100%;
-        height:722px;
-        background-color: lime;
-        position:absolute;
-        top:15.25%;
+        width: 50%;
+        height:600px;
+        margin-left: 25%;
+        margin-top: 4%;
+        background-color: rgb(0,0,0,0.1);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        position:relative;
         }
 
          #pot-square-2{
-        width: 30%;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
-        margin:5%;
+        width: 60%;
+        background: rgb(0,255,0,0);
+        border: 3px solid rgb(0,255,0,0.6);
+        margin:15%;
         position: relative;
-        top:-5%;
-        left:15%;
+        top:20%;
+        left:5%;
+        border-radius: 20px;
         }
 
         #pot-inner-square{
         height:60%;
         width:60%;
-        outline: 2px solid white;
         position:relative;
         top:20%;
         left:15%;
@@ -245,12 +182,14 @@ border-radius: 4px;
         #pot-inner-square-2{
         height:60%;
         width:60%;
-        outline: 2px solid white;
         position:relative;
         top:20%;
         left:15%;
         }
         
+#pot-square-2:hover{
+    background: rgb(0,255,0,0.5);
+}
         .row {
   display: flex;
   flex-direction: row;
@@ -267,10 +206,13 @@ border-radius: 4px;
         
         #veg-container2{
         position: relative;
-        top:30%;
-        background-color: rgb(189,105,105);
+        top:5%;
+        background-color: rgb(0,255,0,0.3);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
         height:40%;
         width:40%;
+        left: -25%;
         margin:0 auto;
         }
         
@@ -280,8 +222,8 @@ border-radius: 4px;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
         }
 
@@ -291,18 +233,24 @@ border-radius: 4px;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
         }
         
         #border{
-        height:35%;
-        width:80%;
-        outline: 5px dotted white;
-        position:absolute;
-        left:10%;
-        top:10%;
+                        height:96.5%;
+                        width:98%;
+                        left:6%;
+                        top:2%;
+                        overflow:auto;
+                        position: relative;
+                        border-radius: 20px;
+                        background-color: rgb(0,255,0,0);
+                        <!--border: 3px solid rgb(0,255,0,0);-->
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                        margin-left: -5%;
         }
         
         #veg-container1{
@@ -319,12 +267,13 @@ border-radius: 4px;
         #rightContent{
             background-color: whitesmoke;
             float: right;
-            height: 35%;
-            width: 20%;
+            height: 60%;
+            width: 35%;
             border: 3px black solid;
             position: relative;
-            top:50%;
+            top:-93%;
             right:5%;
+            border-radius: 20px;
         }
        
         #like{
@@ -340,7 +289,7 @@ border-radius: 4px;
         #plantinfo ul{
             list-style-type: none;
             line-height: 200%;
-            font-size: 12pt;
+            font-size: 120%;
             
         }
 
