@@ -184,70 +184,47 @@ a>p{
 #gardenplanhref:hover{
     opacity: 0.8;
 }
-#secondpageimage2{
-    margin-right: 5%;
-    float: right;
-    margin-top: -15%;
-}
-/*#footer{
-    margin-top: 12%;
-    height: 90px;
-    background: Black;
-}
-#footerfiller{
-    height: 30px;
-}
-#footercontent{
-    text-align: center;
-    font-size: 25px;
-    color: white;
-}*/
 
-
-        #footer{
-position: absolute;
-top:93%;
-width: 100%;
-height: 7%;
-background-color: #1BB634;
-border-radius: 4px;
-        }
         
         
         
 #gardencontent{
-        width: 100%;
-        height:722px;
-        background-color: lime;
-        position:absolute;
-        top:15.25%;
+        width: 50%;
+        height:600px;
+        margin-left: 25%;
+        margin-top: 4%;
+        background-color: rgb(0,0,0,0.1);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        position:relative;
         }
         
         #pot-square{
         width: 15%;
         height: 80%;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: rgb(0,255,0,0.5);
+        border: 2px solid rgb(0,255,0,0.5);
         margin:5%;
         position: relative;
         top:-20%;
+        border-radius: 20px;
         }
 
          #pot-square-2{
-        width: 40%;
-        /*height: 50%;*/
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        width: 60%;
+        height: 100%;
+        background: rgb(10,255,10,00);
+        border: 2px solid rgb(0,255,0,0.5);
         margin:5%;
         position: relative;
         top:-5%;
         left:15%;
+        border-radius: 20px;
         }
 
         #pot-inner-square{
         height:60%;
-        width:60%;
-        outline: 2px solid white;
+        width:80%;
         position:relative;
         top:20%;
         left:15%;
@@ -256,13 +233,21 @@ border-radius: 4px;
         #pot-inner-square-2{
         height:60%;
         width:60%;
-        outline: 2px solid white;
         position:relative;
         top:20%;
         left:15%;
         }
         
+#pot-square-2:hover{
+    background: rgb(0,255,0,0.5);
+}
         .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.row2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -274,15 +259,17 @@ border-radius: 4px;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+    margin-top: 5%;
 }
         
         #veg-container2{
         position: absolute;
-        left:22.5%;
-        top:30%;
-        background-color: rgb(189,105,105);
-        height:40%;
+        left:4%;
+        top:5%;
+        background-color: rgb(0,255,0,0.3);
+        height:57%;
         width:50%;
+        border-radius: 20px;
         }
         
         #pot-button{
@@ -291,8 +278,8 @@ border-radius: 4px;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
         }
 
@@ -302,19 +289,24 @@ border-radius: 4px;
         right:8%;
         width: 20px;
         height: 20px;
-        background: #C4C4C4;
-        border: 2px solid #FFFCFC;
+        background: darkblue;
+        border: 2px solid darkblue;
         border-radius: 50%;
         }
         
         #border{
-        height:50%;
-        width:80%;
-        outline: 5px dotted white;
-        position:absolute;
-        left:10%;
-        top:10%;
-        /*overflow:auto;*/
+                        height:96.5%;
+                        width:98%;
+                        left:6%;
+                        top:2%;
+                        overflow:auto;
+                        position: relative;
+                        border-radius: 20px;
+                        background-color: rgb(0,255,0,0);
+                        <!--border: 3px solid rgb(0,255,0,0);-->
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                        margin-left: -5%;
         }
         
         #veg-container1{
@@ -331,12 +323,13 @@ border-radius: 4px;
         #rightContent{
             background-color: whitesmoke;
             float: right;
-            height: 98%;
-            width: 20%;
+            height: 75%;
+            width: 40%;
             border: 3px black solid;
             position: relative;
             top:0%;
-            right:5%;
+            right:2%;
+            border-radius: 20px;
         }
        
         #like{
@@ -352,13 +345,17 @@ border-radius: 4px;
         #plantinfo ul{
             list-style-type: none;
             line-height: 200%;
-            font-size: 15pt;
+            font-size: 140%;
             
-        }
-
+        } 
         
-
-        
+#filler{
+    height: 20%;
+    width: 100%;
+}
+li{
+    font-weight: bold;
+}       
 
 
         

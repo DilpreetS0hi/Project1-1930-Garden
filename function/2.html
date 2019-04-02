@@ -1,0 +1,203 @@
+<html>
+
+
+<head>
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAgd-u-URHUzbFcz0YDmHZ8YAmL8ggP4y0",
+            authDomain: "garden-2301c.firebaseapp.com",
+            databaseURL: "https://garden-2301c.firebaseio.com",
+            projectId: "garden-2301c",
+            storageBucket: "garden-2301c.appspot.com",
+            messagingSenderId: "871298628058"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <style>
+        .recom {
+            width: 100%;
+            /*            background-color: aqua;*/
+            height: 60vh;
+            clear: both;
+        }
+
+        #c1,
+        #c2,
+        #c3,
+        #c4,
+        #c5,
+        #c6,
+        #c7,
+        #c8,
+        #c9 {
+            height: 10vh;
+            width: 15%;
+            /*            background-color: antiquewhite;*/
+            margin: 4vh;
+            float: left;
+            text-align: center;
+            padding-top: 4vh;
+
+        }
+
+        #listofplant {
+            float: left;
+            width: 100%;
+            clear: both;
+
+
+        }
+
+        .bottonClick {
+            display: inline-block;
+            width: 20%;
+            margin: 1vh;
+        }
+
+        #button1 {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            /* Safari */
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="recom">
+        <div id="c1"><button id="button1">harvest with backyard</button></div>
+        <div id="c2"><button id="button1">harvest with balcony</button></div>
+        <div id="c3"><button id="button1">harvest with kitchen window</button></div>
+        <div id="c4"><button id="button1">herb with backyard</button></div>
+        <div id="c5"><button id="button1">herb with balcony</button></div>
+        <div id="c6"><button id="button1">herb with kitchen window</button></div>
+        <div id="c7"><button id="button1">newbie with backyard</button></div>
+        <div id="c8"><button id="button1">newbie with balcony</button></div>
+        <div id="c9"><button id="button1">newbie with kitchen window</button></div>
+
+
+    </div>
+
+
+
+
+    <!--        <div id="Team15"> Click here for team 15...</div>-->
+
+    <script>
+        document.getElementById("c1").addEventListener("click", function() {
+            Showlist("harvest with backyard");
+
+
+
+        });
+        document.getElementById("c2").addEventListener("click", function() {
+            Showlist("harvest with balcony");
+
+
+
+        });
+        document.getElementById("c3").addEventListener("click", function() {
+            Showlist("harvest with kitchen window");
+
+
+
+        });
+        document.getElementById("c4").addEventListener("click", function() {
+            Showlist("herb with backyard");
+
+
+
+        });
+        document.getElementById("c5").addEventListener("click", function() {
+            Showlist("herb with balcony");
+
+
+
+        });
+        document.getElementById("c6").addEventListener("click", function() {
+            Showlist("herb with kitchen window");
+
+
+
+        });
+        document.getElementById("c7").addEventListener("click", function() {
+            Showlist("newbie with backyard");
+
+
+
+        });
+        document.getElementById("c8").addEventListener("click", function() {
+            Showlist("newbie with balcony");
+
+
+
+        });
+        document.getElementById("c9").addEventListener("click", function() {
+            Showlist("newbie with kitchen window");
+
+
+
+        });
+
+        function Showlist(catergory) {
+            var dbRef = firebase.database().ref("Team15/Combination/" + catergory);
+            var promise = dbRef.once("value", function(snap) {
+                list = snap.val();
+            });
+
+
+            promise.then(function() {
+                DisplayList(list); //JSON object
+            });
+        }
+
+
+
+
+
+
+
+        function DisplayList(list) {
+            console.log(list);
+
+            for (x in list) {
+                var para = document.createElement("div");
+                var bottonClick = document.createElement("button");
+                var inside = document.createElement("p");
+
+                document.body.appendChild(para);
+
+                para.appendChild(bottonClick);
+                bottonClick.appendChild(inside);
+
+                var node = document.createTextNode(x);
+                inside.appendChild(node);
+                para.setAttribute("id", "listofplant");
+                bottonClick.setAttribute("Class", "bottonClick");
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
