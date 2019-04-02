@@ -1,8 +1,17 @@
+<<<<<<< HEAD
 <style > body {
     margin: 0 auto;
 }
 
 #firstpage {
+=======
+<style>
+
+body{
+    margin: 0 auto;
+}
+#firstpage{
+>>>>>>> 91f68c73b0897747ea80f471ab379b005da566d2
     background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
     background-repeat: no-repeat;
     background-size: 120% 100%;
@@ -142,8 +151,12 @@ a > p {
     color: white;
     margin-left: 4%;
 }
+<<<<<<< HEAD
 
 #gardenplanhref {
+=======
+#gardenplanhref{
+>>>>>>> 91f68c73b0897747ea80f471ab379b005da566d2
     margin-top: 5%;
     margin-left: -3%;
     background: #3FCCF8;
@@ -167,6 +180,7 @@ a > p {
     float: right;
     margin-top: -15%;
 }
+<<<<<<< HEAD
 
 
 
@@ -367,3 +381,161 @@ a > p {
 
 
 </style >
+=======
+        
+        
+        
+#gardencontent{
+        width: 50%;
+        height:600px;
+        margin-left: 25%;
+        margin-top: 4%;
+        background-color: rgb(0,0,0,0.1);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        position:relative;
+        }
+
+         #pot-square-2{
+        width: 60%;
+        background: rgb(0,255,0,0);
+        border: 3px solid rgb(0,255,0,0.6);
+        margin:15%;
+        position: relative;
+        top:20%;
+        left:5%;
+        border-radius: 20px;
+        }
+
+        #pot-inner-square{
+        height:60%;
+        width:60%;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
+
+        #pot-inner-square-2{
+        height:60%;
+        width:60%;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
+        
+#pot-square-2:hover{
+    background: rgb(0,255,0,0.5);
+}
+        .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+        
+        #veg-container2{
+        position: relative;
+        top:5%;
+        background-color: rgb(0,255,0,0.3);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        height:40%;
+        width:40%;
+        left: -25%;
+        margin:0 auto;
+        }
+        
+        #pot-button{
+        position: relative;
+        top:-70%;
+        right:8%;
+        width: 20px;
+        height: 20px;
+        background: darkblue;
+        border: 2px solid darkblue;
+        border-radius: 50%;
+        }
+
+        #pot-button-2{
+        position: relative;
+        top:-70%;
+        right:8%;
+        width: 20px;
+        height: 20px;
+        background: darkblue;
+        border: 2px solid darkblue;
+        border-radius: 50%;
+        }
+        
+        #border{
+                        height:96.5%;
+                        width:98%;
+                        left:6%;
+                        top:2%;
+                        overflow:auto;
+                        position: relative;
+                        border-radius: 20px;
+                        background-color: rgb(0,255,0,0);
+                        <!--border: 3px solid rgb(0,255,0,0);-->
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                        margin-left: -5%;
+        }
+        
+        #veg-container1{
+        display: flex;
+        width:35%;
+        height:20%;
+        position:absolute;
+        left:23%;
+        top:5%;
+        background-color: rgb(189,105,105);;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|B612|Lora');
+        #rightContent{
+            background-color: whitesmoke;
+            float: right;
+            height: 60%;
+            width: 35%;
+            border: 3px black solid;
+            position: relative;
+            top:-93%;
+            right:5%;
+            border-radius: 20px;
+        }
+       
+        #like{
+            width: 10%;
+            padding-right: 3vh;
+            padding-left: 3vh;
+
+        }
+        #plantinfo{
+            border-top: 3px black solid;
+
+        }
+        #plantinfo ul{
+            list-style-type: none;
+            line-height: 200%;
+            font-size: 120%;
+            
+        }
+
+        
+
+        
+
+
+        
+        
+        
+</style>              
+>>>>>>> 91f68c73b0897747ea80f471ab379b005da566d2
