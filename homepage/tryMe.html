@@ -5,7 +5,6 @@
     <link rel="stylesheet" type="text/css" href="tryMe.css">
  
     
-<!--
      <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
     
@@ -25,7 +24,6 @@
   };
   firebase.initializeApp(config);
 </script>
--->
     </head>
     <body>
         <div id="firstpage">
@@ -35,8 +33,6 @@
         <nav>
             <button onclick="Home">Home</button>
             <button onclick="Garden Planning">Garden Planning</button>
-            <button onclick="News">News</button>
-            <button onclick="Photos of the Day">Photos of the Day</button>
         <button onclick="About">About <div id="about-dropdown-content">
   <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Who Are We</a>
   <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Contacts</a>
@@ -47,13 +43,13 @@
         <div id="middle">
         <div id="firstpagemaincontent1">Sustainability</div>
         <div id="firstpagemaincontent2">STARTS WITH YOU</div>
-            <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#Sign"><p>
+            <button id="signinbutton" onclick="signinwindowview()"><p>
                 
-                Sign in</p></a>
-<!--
+                Sign in</p></button>
+            <div id="firebaseui-button">
              <div id="firebaseui-auth-container"></div>
         <div id="loader">Loading...</div>
--->
+                </div>
         </div>
         </div>
         <div id="secondpage">
@@ -62,14 +58,14 @@
         <div id="secondpageline2">Some of the Earth's greatest landscapes are threatened by increased road construction, oil and gas exploration, and mining. We aim to protect these areas from inappropriate development, but we cannot achieve our goals alone. Find out how you can help.</div>
         </div>
         <div id="secondpagesecondpart">
-        <img id="secondpageimage1" src="./images/garden2.jpeg" alt="image">
+        <img id="secondpageimage1" src="../images/garden2.jpeg" alt="image">
         <div id="secondpageabout">ABOUT</div>
         <div id="secondpageaboutPara">Find out about our organization, mission, our methods, and the results of our decades of advocacy.</div>
         </div>
         <div id="secondpagethirdpart">
         <div id="secondpagegardenplan">Garden Planner
             <div id="gardenplanhref"><a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#gardenplanhref">Start Garden Planning</a></div></div>
-        <img id="secondpageimage2" src="./images/garden1.jpeg" alt="image">
+        <img id="secondpageimage2" src="../images/garden1.jpeg" alt="image" height="400px">
         </div>
         </div>
         <div id="footer">
@@ -90,7 +86,6 @@
    
     
     
-<!--
     <script>var uiConfig = {
   callbacks: {
     signInSuccessWithAuthResult: function(authResult, redirectUrl) {
@@ -122,5 +117,12 @@
     </script>
     <script>// The start method will wait until the DOM is loaded.
 ui.start('#firebaseui-auth-container', uiConfig);</script>
--->
+        <script>
+            function signinwindowview(){
+                document.getElementById('firebaseui-button').classList.toggle("firebaseui-button-show");
+                document.getElementById('signinbutton').classList.toggle("signinbuttonhide");
+                document.getElementById('firstpagemaincontent1').classList.toggle("signinbuttonhide");
+                document.getElementById('firstpagemaincontent2').classList.toggle("signinbuttonhide");
+            }
+        </script>
     </body></html>

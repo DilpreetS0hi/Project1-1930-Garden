@@ -8,12 +8,12 @@
             background-repeat: no-repeat;
             background-size: 120% 100%;
             position: relative;
+            height:  900px;
         }
         #header{
             height: 100px;
             width: 100%;
-            background: black;
-            opacity: 0.4;
+            background: rgb(0, 0, 0, 0.4);
             margin-top: 0%;
             float: left;
         }
@@ -36,7 +36,7 @@
             
         }
         nav>button:first-child{
-            margin-left: 30%;
+            margin-left: 52%;
         }
         nav>button{
             text-decoration: none;
@@ -48,7 +48,7 @@
             position: relative;
             color: White;
             font-size: 15px;
-            margin-left: 2%;
+            margin-left: 7%;
         }
         nav>button:hover{
             background: White;
@@ -86,7 +86,7 @@
         #middle{
             margin-left: 40%;
         }
-        #middle>a{
+        #middle>button{
             display: inline-block;
             background: #3FCCF8;
             border: 2px solid 3FCCF8;
@@ -100,12 +100,12 @@
             margin-bottom: 25%;
             opacity: 0.85;
         }
-        #middle>a:hover{
+        #middle>button:hover{
             background: #0ef6f4;
             opacity: 0.85;
             color: #ffffff;
         }
-        a>p{
+        button>p{
             margin-top: 4%;
             font-size: 25px;
         }
@@ -143,8 +143,13 @@
         #secondpageimage1{
             margin-left: 6%;
             margin-top: 4%;
-         
+            height: 40%;
+            width: 40%;
         }
+        #secondpageimage1{
+            height: 45%;
+            width: 45%;
+}
         #secondpageabout{
             font-size: 40px;
             margin-left: 65%;
@@ -201,3 +206,15 @@
             font-size: 25px;
             color: white;
         }
+#firebaseui-button{
+    display: none;
+    margin-left: -3%;
+    position: absolute;
+    margin-top: 25%;
+}
+.firebaseui-button-show{
+    display: block !important;
+}
+.signinbuttonhide{
+    display: none !important;
+}
