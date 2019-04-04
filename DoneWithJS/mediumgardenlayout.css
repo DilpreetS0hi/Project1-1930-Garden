@@ -1,0 +1,390 @@
+<style>
+body{
+    margin: 0 auto;
+}
+#firstpage{
+    width: cover;
+    
+    background-repeat: no-repeat;
+    background-size: 120% 100%;
+    position: relative;
+}
+#header{
+    height: 100px;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+    margin-top: 0%;
+    /*float: left;*/
+    position: relative;
+    top:-15%;
+}
+#innerheader{
+    width: 80%;
+    margin: 0 auto;
+}
+#heading{
+    font-size: 350%;
+    width: 25%;
+    float: left;
+    margin-top: 1%;
+    color: lime;
+    font-family: "Times New Roman";
+}
+nav{
+    width: 75%;
+    float: left;
+    margin-top: 2%;
+    
+}
+nav>button:first-child{
+    margin-left: 30%;
+}
+nav>button{
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid White;
+    border-radius: 20px;
+    padding: .7% 15px;
+    position: relative;
+    color: White;
+    font-size: 15px;
+    margin-left: 2%;
+}
+nav>button:hover{
+    background: White;
+    color: black;
+    font-size: 15px;
+    border-color: White;
+}
+#about-dropdown-content{
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+opacity: 0.9;
+min-width: 116px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+z-index: 1;
+margin-left: -5%;
+margin-top: 16%;
+}
+#about-dropdown-content a{
+color: black;
+opacity: 1.0;
+padding: 10px 10px;
+text-decoration: none;
+display: block;
+margin-top: -5%;
+}
+#about-dropdown-content a:hover{
+background: Black;
+color: white;
+    
+}
+nav>button:hover #about-dropdown-content{
+    display: block;
+}
+#middle{
+    margin-left: 40%;
+}
+#middle>a{
+    display: inline-block;
+    background: #3FCCF8;
+    border: 2px solid 3FCCF8;
+    height: 50px;
+    width: 30%;
+    margin-top: 45%;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fafafa;
+    margin-bottom: 25%;
+    opacity: 0.85;
+}
+#middle>a:hover{
+    background: #0ef6f4;
+    opacity: 0.85;
+    color: #ffffff;
+}
+a>p{
+    margin-top: 4%;
+    font-size: 25px;
+}
+#firstpagemaincontent1{
+    font-style: italic;
+    font-size: 50px;
+    font-stretch: expanded;
+    color: white;margin-left: 0%;
+    position: absolute;
+    margin-top: 22%;
+}
+#firstpagemaincontent2{
+    position: absolute;
+    margin-top: 28%;
+    color: white;
+    margin-left: 4%;
+}
+#secondpageline1{
+    font-size: 45px;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-weight: 600;
+}
+#secondpageline2{
+    font-size: 25px;
+    margin-left: 18%;
+    margin-right: 26%;
+    text-align: center;
+    margin-top: 1.5%;
+    color: gray;
+}
+#secondpagesecondpart{
+    margin-top: 5%;
+}
+#secondpageimage1{
+    margin-left: 6%;
+    margin-top: 4%;
+}
+#secondpageabout{
+    font-size: 40px;
+    margin-left: 65%;
+    margin-top: -22%;
+    font-weight: bold;
+}
+#secondpageaboutPara{
+    margin-top: 3%;
+    margin-left: 55%;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15%;
+}
+#secondpagethirdpart{
+    margin-top: 30%;
+}
+#secondpagegardenplan{
+    margin-top: -10%;
+    margin-left: 20%;
+    font-size: 40px;
+    font-weight: bold;
+}
+#gardenplanhref{
+    margin-top: 5%;
+    margin-left: -3%;
+    background: #3FCCF8;
+    margin-right: 76%;
+    border-radius: 30px;
+}
+#gardenplanhref>a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 7%;
+    color: white;
+}
+#gardenplanhref:hover{
+    opacity: 0.8;
+}
+
+        
+        
+        
+#gardencontent{
+        width: 50%;
+        height:600px;
+        margin-left: 25%;
+        margin-top: 4%;
+        background-color: rgb(0,0,0,0.1);
+        border: 3px solid rgb(0,255,0,0.6);
+        border-radius: 20px;
+        position:relative;
+        }
+        
+        #pot-square{
+        width: 15%;
+        height: 80%;
+        background: rgb(0,255,0,0.5);
+        border: 2px solid rgb(0,255,0,0.5);
+        margin:5%;
+        position: relative;
+        top:-20%;
+        border-radius: 20px;
+        }
+
+         #pot-square-2{
+        width: 60%;
+        height: 10vh;
+        background: rgb(10,255,10,00);
+        border: 2px solid rgb(0,255,0,0.5);
+        margin:5%;
+        position: relative;
+        top:-5%;
+        left:15%;
+        border-radius: 20px;
+        }
+
+        #pot-inner-square{
+        height:60%;
+        width:80%;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
+
+        #pot-inner-square-2{
+        height:60%;
+        width:60%;
+        position:relative;
+        top:20%;
+        left:15%;
+        }
+        
+#pot-square-2:hover{
+    background: rgb(0,255,0,0.5);
+}
+        .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.row2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+    margin-top: 5%;
+}
+        
+        #veg-container2{
+        position: absolute;
+        left:4%;
+        top:5%;
+        background-color: rgb(0,255,0,0.3);
+        height:57%;
+        width:50%;
+        border-radius: 20px;
+        }
+        
+        #pot-button{
+        position: relative;
+        top:-70%;
+        right:8%;
+        width: 20px;
+        height: 20px;
+        background: darkblue;
+        border: 2px solid darkblue;
+        border-radius: 50%;
+        }
+
+        #pot-button-2{
+        position: relative;
+        top:-70%;
+        right:8%;
+        width: 20px;
+        height: 20px;
+        background: darkblue;
+        border: 2px solid darkblue;
+        border-radius: 50%;
+        }
+        
+        #border{
+                        height:96.5%;
+                        width:98%;
+                        left:6%;
+                        top:2%;
+                        overflow:auto;
+                        position: relative;
+                        border-radius: 20px;
+                        background-color: rgb(0,255,0,0);
+                        <!--border: 3px solid rgb(0,255,0,0);-->
+                        margin-top: 0%;
+                        margin-bottom: 2%;
+                        margin-left: -5%;
+        }
+        
+        #veg-container1{
+        display: flex;
+        width:35%;
+        height:20%;
+        position:absolute;
+        left:23%;
+        top:5%;
+        background-color: rgb(189,105,105);;
+        }
+
+        @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|B612|Lora');
+        #rightContent{
+            background-color: whitesmoke;
+            float: right;
+            height: 75%;
+            width: 40%;
+            border: 3px black solid;
+            position: relative;
+            top:0%;
+            right:2%;
+            border-radius: 20px;
+        }
+       
+        #like{
+            width: 10%;
+            padding-right: 3vh;
+            padding-left: 3vh;
+
+        }
+        #plantinfo{
+            border-top: 3px black solid;
+
+        }
+        #plantinfo ul{
+            list-style-type: none;
+            line-height: 200%;
+            font-size: 140%;
+            
+        } 
+        
+#filler{
+    height: 20%;
+    width: 100%;
+}
+li{
+    font-weight: bold;
+}       
+
+
+        
+   #leftContent {
+    height: 96.5%;
+    width: 30%;
+    left: -40%;
+    top: -100%;
+    position: relative;
+    background-color: rgb(0, 255, 0, 0);
+    float: left;
+    border: 3px black solid;
+    display: block;
+}     
+    #button1 {
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}    
+</style>              

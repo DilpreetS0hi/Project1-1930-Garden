@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GardenAid</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="smallgardenlayout.css">
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAgd-u-URHUzbFcz0YDmHZ8YAmL8ggP4y0",
+            authDomain: "garden-2301c.firebaseapp.com",
+            databaseURL: "https://garden-2301c.firebaseio.com",
+            projectId: "garden-2301c",
+            storageBucket: "garden-2301c.appspot.com",
+            messagingSenderId: "871298628058"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+
+    </script>
+</head>
+
+
+
+<body>
+    <div id="firstpage">
+        <div id="header">
+
+            <div id="innerheader">
+                <span id="heading">Garden-Aid</span>
+                <nav>
+                    <button onclick="Home">Home</button>
+                    <button onclick="Garden Planning">Garden Planning</button>
+                    <button onclick="News">News</button>
+                    <button onclick="Photos of the Day">Photos of the Day</button>
+                    <button onclick="About">About <div id="about-dropdown-content">
+                            <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Who Are We</a>
+                            <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Contacts</a>
+                            <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">More about us</a>
+                        </div></button>
+                </nav>
+            </div>
+        </div>
+        <div id="gardencontent">
+
+            <div id="border">
+
+                <div id="veg-container2">
+
+                    <div class=row>
+
+                        <div class=column>
+                            <div id="pot-square-2">
+                                <div id="pot-inner-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--                                    <img src="images/tomato-md.png" height="100%" width="100%">-->
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class=column>
+                            <div id="pot-square-2">
+                                <div id="pot-inner-square" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <!--                                    <img src="images/tomato-md.png" height="100%" width=100%>-->
+                                </div>
+                                <div id="pot-button">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div id="leftContent">
+                <div id="c9"><button id="button1">Recommenda Plants</button>
+                    <div id="showit"></div>
+                </div>
+                <script>
+                    document.getElementById("button1").addEventListener("click", function() {
+                        Showlist("harvest with kitchen window");
+
+
+
+                    });
+
+                    function Showlist(catergory) {
+                        var dbRef = firebase.database().ref("Team15/Combination/" + catergory);
+                        var promise = dbRef.once("value", function(snap) {
+                            list = snap.val();
+                        });
+
+
+                        promise.then(function() {
+                            DisplayList(list); //JSON object
+                        });
+                    }
+
+
+
+
+
+
+                    var indexofId = 0;
+
+                    function DisplayList(list) {
+                        console.log(list);
+
+                        for (x in list) {
+                            //                            var bottonClick = document.createElement("button");
+
+                            //                            bottonClick.appendChild(inside);
+                            //                            var node = document.createTextNode(x);
+                            //                            inside.appendChild(node);
+                            //                            inside.setAttribute("id", "listofplant" + indexofId);
+                            //                            inside.setAttribute("draggable", "true");
+                            //                            inside.setAttribute("ondragstart", "drag(event)");
+
+                            //                            bottonClick.setAttribute("Class", "bottonClick");
+                            indexofId++;
+                            DisplayImage("./images/" + x + ".png");
+                        }
+
+                    }
+
+                    function DisplayImage(picturefile) {
+                        var x = document.createElement("IMG");
+                        x.setAttribute("src", picturefile);
+                        x.setAttribute("width", "100");
+                        x.setAttribute("height", "100");
+                        x.setAttribute("id", "listofplant" + indexofId);
+                        x.setAttribute("draggable", "true");
+                        x.setAttribute("ondragstart", "drag(event)");
+                        var pa = document.getElementById("showit");
+                        pa.appendChild(x);
+                        //                        document.body.appendChild(x);
+                    }
+
+                </script>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
