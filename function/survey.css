@@ -12,6 +12,10 @@
 
         }
 */
+        
+        #toptext{
+        display:inline;
+        }
         #btn {
             background-color: #4CAF50;
             /* Green */
@@ -20,14 +24,33 @@
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
+            /*display: inline-block;*/
             font-size: 16px;
+            margin-left: 2%;
+            position: relative;
+            top:-30%;
         }
 
         .user-select {
-            position: relative;
+            position: absolute;
+            /* right:60%; */
+            left: 52%;
+            top:30%;
+            /*left:50%;
+            top:-45% !important;*/
             font-family: Arial;
-            margin: 5vh;
+            /*margin: 5vh;*/
+            
+        }
+
+        #user-select-2 {
+            /*position: absolute;
+            /*left:50%;*/
+            /*top:-25% !important;*/
+            top:55%;
+            font-family: Arial;
+            /*margin: 5vh;*/
+            
         }
 
         .user-select select {
@@ -37,6 +60,7 @@
 
         .select-selected {
             background-color: DodgerBlue;
+            
         }
 
         /*style the arrow inside the select element:*/
@@ -70,7 +94,7 @@
 
         /*style items (options):*/
         .select-items {
-            position: absolute;
+            /*position: absolute;*/
             background-color: DodgerBlue;
             top: 100%;
             left: 0;
