@@ -6,35 +6,8 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="largegardenlayout.css">
     <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyAgd-u-URHUzbFcz0YDmHZ8YAmL8ggP4y0",
-            authDomain: "garden-2301c.firebaseapp.com",
-            databaseURL: "https://garden-2301c.firebaseio.com",
-            projectId: "garden-2301c",
-            storageBucket: "garden-2301c.appspot.com",
-            messagingSenderId: "871298628058"
-        };
-        firebase.initializeApp(config);
-
-    </script>
-    <script>
-        function allowDrop(ev) {
-            ev.preventDefault();
-        }
-
-        function drag(ev) {
-            ev.dataTransfer.setData("text", ev.target.id);
-        }
-
-        function drop(ev) {
-            ev.preventDefault();
-            var data = ev.dataTransfer.getData("text");
-            ev.target.appendChild(document.getElementById(data));
-        }
-
-    </script>
+     <script src="setup_firebase_yourname.js"></script>
+    <script src="largegardenlayoutherb.js"></script>
 </head>
 
 
@@ -45,15 +18,17 @@
         <div id="header">
 
             <div id="innerheader">
-                <span id="heading">Garden-Aid</span>
+                <span id="heading">GardenAid</span>
                 <nav>
-                    <button onclick="Home">Home</button>
-                    <button onclick="Garden Planning">Garden Planning</button>
+                    <button onclick="Home"id="font">Home</button>
+                    <button onclick="Garden Planning"id="font">Garden Planning</button>
+<!--
                     <button onclick="About">About <div id="about-dropdown-content">
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Who Are We</a>
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Contacts</a>
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">More about us</a>
                         </div></button>
+-->
                 </nav>
             </div>
         </div>
@@ -153,60 +128,11 @@
                 </div>
 
                 
-                <div id="leftContent">
+                 <div id="leftContent">
                     <div id="c9"><button id="button1">Recommenda Plants</button>
                         <div id="showit"></div>
                     </div>
-                    <script>
-                        document.getElementById("button1").addEventListener("click", function() {
-                            Showlist("herb with kitchen window");
-
-
-
-                        });
-
-                        function Showlist(catergory) {
-                            var dbRef = firebase.database().ref("Team15/Combination/" + catergory);
-                            var promise = dbRef.once("value", function(snap) {
-                                list = snap.val();
-                            });
-
-
-                            promise.then(function() {
-                                DisplayList(list); //JSON object
-                            });
-                        }
-
-
-
-
-
-
-                        var indexofId = 0;
-
-                        function DisplayList(list) {
-                            console.log(list);
-
-                            for (x in list) {
-                               
-                                indexofId++;
-                                DisplayImage("./images/" + x + ".png");
-                            }
-
-                        }
-
-                        function DisplayImage(picturefile) {
-                            var x = document.createElement("IMG");
-                            x.setAttribute("src", picturefile);
-                            x.setAttribute("width", "100");
-                            x.setAttribute("height", "100");
-                            x.setAttribute("id", "listofplant" + indexofId);
-                            x.setAttribute("draggable", "true");
-                            x.setAttribute("ondragstart", "drag(event)");
-                            var pa = document.getElementById("showit");
-                            pa.appendChild(x);
-                            //                        document.body.appendChild(x);
-                        }
+                    <script src="largegardenlayoutherb222.js">
 
                     </script>
                 </div>

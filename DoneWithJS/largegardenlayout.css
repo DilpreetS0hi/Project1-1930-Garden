@@ -1,16 +1,25 @@
-<style>
-body{
+<style > @import url('https://fonts.googleapis.com/css?family=Lato');
+
+#font {
+    font-family: 'Lato', sans-serif;
+    font-size: 300%;
+
+
+}
+
+body {
     margin: 0 auto;
     position: relative;
 }
-#firstpage{
+
+#firstpage {
     width: cover;
- 
     background-repeat: no-repeat;
     background-size: 120% 100%;
     position: relative;
 }
-#header{
+
+#header {
     height: 100px;
     width: 100%;
     background: black;
@@ -18,79 +27,93 @@ body{
     margin-top: 0%;
     /*float: left;*/
     position: relative;
-    top:-15%;
+    top: -15%;
 }
-#innerheader{
+
+#innerheader {
     width: 80%;
     margin: 0 auto;
 }
-#heading{
-    font-size: 350%;
+
+#heading {
+    font-size: 500%;
     width: 25%;
     float: left;
     margin-top: 1%;
-    color: lime;
-    font-family: "Times New Roman";
+    color: white;
+    font-family: 'Lato', sans-serif;
+    height: 30vh;
 }
-        nav{
-            width: 75%;
-            float: left;
-            margin-top: 2%;
-            
-        }
-        nav>button:first-child{
-            margin-left: 50%;
-        }
-        nav>button{
-            text-decoration: none;
-            display: inline-block;
-            background: transparent;
-            border: 2px solid White;
-            border-radius: 20px;
-            padding: .7% 15px;
-            position: relative;
-            color: White;
-            font-size: 15px;
-            margin-left: 8%;
-        }
-        nav>button:hover{
-            background: White;
-            color: black;
-            font-size: 15px;
-            border-color: White;
-            cursor: pointer;
-        }
-#about-dropdown-content{
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-opacity: 0.9;
-min-width: 116px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
-z-index: 1;
-margin-left: -5%;
-margin-top: 16%;
+
+nav {
+    width: 50%;
+    float: right;
+    margin: 5vh;
+    height: 30vh;
+
 }
-#about-dropdown-content a{
-color: black;
-opacity: 1.0;
-padding: 10px 10px;
-text-decoration: none;
-display: block;
-margin-top: -5%;
+
+nav > button:first-child {
+    margin-left: 50%;
 }
-#about-dropdown-content a:hover{
-background: Black;
-color: white;
-    
+
+nav > button {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid White;
+    border-radius: 20px;
+    padding: .7% 15px;
+    position: relative;
+    color: White;
+    font-size: 15px;
+    margin-left: 8%;
 }
-nav>button:hover #about-dropdown-content{
+
+nav > button:hover {
+    background: White;
+    color: black;
+    font-size: 15px;
+    border-color: White;
+    cursor: pointer;
+}
+
+#about-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    opacity: 0.9;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -5%;
+    margin-top: 16%;
+}
+
+#about-dropdown-content a {
+    color: black;
+    opacity: 1.0;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: -5%;
+}
+
+#about-dropdown-content a:hover {
+    background: Black;
+    color: white;
+
+}
+
+nav > button:hover #about-dropdown-content {
     display: block;
 }
-#middle{
+
+#middle {
     margin-left: 40%;
 }
-#middle>a{
+
+#middle > a {
     display: inline-block;
     background: #3FCCF8;
     border: 2px solid 3FCCF8;
@@ -104,29 +127,35 @@ nav>button:hover #about-dropdown-content{
     margin-bottom: 25%;
     opacity: 0.85;
 }
-#middle>a:hover{
+
+#middle > a:hover {
     background: #0ef6f4;
     opacity: 0.85;
     color: #ffffff;
 }
-a>p{
+
+a > p {
     margin-top: 4%;
     font-size: 25px;
 }
-#firstpagemaincontent1{
+
+#firstpagemaincontent1 {
     font-style: italic;
     font-size: 50px;
     font-stretch: expanded;
-    color: white;margin-left: 0%;
+    color: white;
+    margin-left: 0%;
     position: absolute;
     margin-top: 22%;
 }
-#firstpagemaincontent2{
+
+#firstpagemaincontent2 {
     position: absolute;
     margin-top: 28%;
     color: white;
     margin-left: 4%;
 }
+
 /*#footer{
     margin-top: 12%;
     height: 90px;
@@ -142,213 +171,224 @@ a>p{
 }*/
 
 
-        #footer{
-position: absolute;
-top:93%;
-width: 100%;
-height: 7%;
-background-color: #1BB634;
-border-radius: 4px;
-        }
-        
-        
-        
-#gardencontent{
-        width: 80%;
-        height:700px;
-        margin-left: 10%;
-        margin-top: 4%;
-        background-color: rgb(0,0,0,0.1);
-        border: 3px solid rgb(0,255,0,0.6);
-        border-radius: 20px;
-        position:relative;
-        }
-                        #border{
-                        height:96.5%;
-                        width:98%;
-                        left:6%;
-                        top:2%;
-                        overflow:auto;
-                        position: relative;
-                        border-radius: 20px;
-                        background-color: rgb(0,255,0,0);
-                        <!--border: 3px solid rgb(0,255,0,0);-->
-                        margin-top: 0%;
-                        margin-bottom: 2%;
-                        margin-left: -5%;
-                        }
-        
-        
-        #pot-square{
-        width: 107px;
-        height: 107px;
-        border: 3px solid rgb(0,255,0,0.9);
-        background: rgb(10,255,10,00);
-        margin:5%;
-        border-radius: 20px;
-        }
-#pot-square{
+#footer {
+    position: absolute;
+    top: 93%;
+    width: 100%;
+    height: 7%;
+    background-color: #1BB634;
+    border-radius: 4px;
+}
+
+
+
+#gardencontent {
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
+    margin-top: 4%;
+    background-color: rgb(0, 0, 0, 0.1);
+    border: 3px solid rgb(0, 255, 0, 0.6);
+    border-radius: 20px;
+    position: relative;
+}
+
+#border {
+    height: 80vh;
+    width: 98%;
+    left: 6%;
+    overflow: auto;
+    position: relative;
+    border-radius: 20px;
+    background-color: rgb(0, 255, 0, 0);
+    < !--border: 3px solid rgb(0, 255, 0, 0);
+    -- > margin-top: 0%;
+    margin-bottom: 2%;
+    margin-left: -5%;
+}
+
+
+#pot-square {
+    width: 107px;
+    height: 107px;
+    border: 3px solid rgb(0, 255, 0, 0.9);
+    background: rgb(10, 255, 10, 00);
+    margin: 5%;
+    border-radius: 20px;
+}
+
+#pot-square {
     margin-left: 15%;
     margin-top: 3%;
 }
-#pot-square:hover{
-    background: rgb(0,255,0,0.6);
-}
-#pot-inner-square3{
-        height:100%;
-        width:100%;
-        position:relative;
-        top:0%;
-        left:0%;
-}
-        #pot-inner-square{
-        height:162%;
-        width:170%;
-        position:relative;
-        top:-30%;
-        left:-27%;
-        }
 
-        #pot-inner-square-2{
-        height:60%;
-        width:60%;
-        position:relative;
-        top:20%;
-        left:15%;
-        }
-        
-        .row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+#pot-square:hover {
+    background: rgb(0, 255, 0, 0.6);
+}
+
+#pot-inner-square3 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+#pot-inner-square {
+    height: 162%;
+    width: 170%;
+    position: relative;
+    top: -30%;
+    left: -27%;
+}
+
+#pot-inner-square-2 {
+    height: 60%;
+    width: 60%;
+    position: relative;
+    top: 20%;
+    left: 15%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
     margin-left: 1.5%;
     margin-top: 3%;
 }
-        
-        #pots{
-        position: absolute;
-        left:2%;
-        top:30%;
-        background-color: rgb(0,255,0,0.3);
-        border: 3px solid rgb(0,255,0,0.6);
-        border-radius: 20px;
-        height:45%;
-        width:55%;
-        }
-        #pot-button{
-        position: relative;
-        top:-70%;
-        right:8%;
-        width: 20px;
-        height: 20px;
-        background: darkblue;
-        border: 2px solid darkblue;
-        border-radius: 50%;
-        }
 
-        #pot-button-2{
-        position: relative;
-        top:-70%;
-        right:8%;
-        width: 20px;
-        height: 20px;
-        background: darkblue;
-        border: 2px solid darkblue;
-        border-radius: 50%;
-        }
-        
-        #other-veg-container{
-        display: flex;
-        width:35%;
-        height:20%;
-        position:absolute;
-        left:2%;
-        top:4%;
-        background-color: rgb(0,255,0,0.3);
-        border: 3px solid rgb(0,255,0,0.6);
-        border-radius: 20px;
-        }
+#pots {
+    position: absolute;
+    left: 2%;
+    top: 30%;
+    background-color: rgb(0, 255, 0, 0.3);
+    border: 3px solid rgb(0, 255, 0, 0.6);
+    border-radius: 20px;
+    height: 45%;
+    width: 55%;
+}
 
-        #third-veg-container{
-        position: absolute;
-        left:22.5%;
-        top:80%;
-        background-color: rgb(189,105,105);;
-        height:40%;
-        width:50%;
-        display: flex;
-        }
+#pot-button {
+    position: relative;
+    top: -70%;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+    background: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+}
 
-        #add-delete-buttons{
-        width: 10%;
-        height:5%;
-        display:flex;
-        padding:2%;
-        margin:2%;
-        }
+#pot-button-2 {
+    position: relative;
+    top: -70%;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+    background: darkblue;
+    border: 2px solid darkblue;
+    border-radius: 50%;
+}
 
-        @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|B612|Lora');
-        #rightContent{
-            background-color: white;
-            float: right;
-            height: 80%;
-            width: 30%;
-            border: 3px black solid;
-            position: relative;
-            top:5%;
-            right:2%;
-            border-radius: 20px;
-        }
-       
-        #like{
-            width: 10%;
-            padding-right: 3vh;
-            padding-left: 3vh;
+#other-veg-container {
+    display: flex;
+    width: 35%;
+    height: 20%;
+    position: absolute;
+    left: 2%;
 
-        }
-        #plantinfo{
-            border-top: 3px black solid;
+    background-color: rgb(0, 255, 0, 0.3);
+    border: 3px solid rgb(0, 255, 0, 0.6);
+    border-radius: 20px;
+}
 
-        }
-        #plantinfo ul{
-            list-style-type: none;
-            line-height: 200%;
-            font-size: 18pt;
-            font-weight: bold;
-            
-        }
-li{
+#third-veg-container {
+    position: absolute;
+    left: 22.5%;
+    top: 80%;
+    background-color: rgb(189, 105, 105);
+    ;
+    height: 40%;
+    width: 50%;
+    display: flex;
+}
+
+#add-delete-buttons {
+    width: 10%;
+    height: 5%;
+    display: flex;
+    padding: 2%;
+    margin: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|B612|Lora');
+
+#rightContent {
+    background-color: white;
+    float: right;
+    height: 80%;
+    width: 30%;
+    border: 3px black solid;
+    position: relative;
+    top: 5%;
+    right: 2%;
+    border-radius: 20px;
+}
+
+#like {
+    width: 10%;
+    padding-right: 3vh;
+    padding-left: 3vh;
+
+}
+
+#plantinfo {
+    border-top: 3px black solid;
+
+}
+
+#plantinfo ul {
+    list-style-type: none;
+    line-height: 200%;
+    font-size: 18pt;
+    font-weight: bold;
+
+}
+
+li {
     margin-top: 5%;
 }
 
-        
+
 #leftContent {
     height: 60vh;
     width: 30%;
-   
-    
+
+
     background-color: rgb(0, 255, 0, 0);
     float: right;
     border: 3px black solid;
     display: block;
     border-radius: 20px;
+     padding: 2vh;
 }
-        
+
 .bottonClick {
     display: inline-block;
     width: 20%;
     margin: 1vh;
 }
 
-        
+
 #button1 {
     background-color: #4CAF50;
     /* Green */
@@ -367,6 +407,6 @@ li{
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-        
-        
-</style>              
+
+
+</style >

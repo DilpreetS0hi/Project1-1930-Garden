@@ -1,0 +1,205 @@
+.image {
+    margin: 1vh;
+
+}
+.nav1{
+    transform: translateX(30vh);
+}
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+
+.font {
+    font-family: 'Lato', sans-serif;
+    font-size: 100%;
+
+}
+
+.select-selected {
+    transform: translateX(25vh);
+}
+
+#toptext {
+    display: inline;
+}
+
+#btn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    /*display: inline-block;*/
+    font-size: 16px;
+    margin-left: 140vh;
+    position: relative;
+    margin-top: 10vh;
+
+}
+
+.user-select {
+    position: absolute;
+    /* right:60%; */
+    left: 52%;
+    top: 30%;
+    /*left:50%;
+            top:-45% !important;*/
+    font-family: Arial;
+    /*margin: 5vh;*/
+
+}
+
+#user-select-2 {
+    /*position: absolute;
+            /*left:50%;*/
+    /*top:-25% !important;*/
+    top: 55%;
+    font-family: Arial;
+    /*margin: 5vh;*/
+
+}
+
+.user-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background-color: DodgerBlue;
+
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+    /*position: absolute;*/
+    background-color: DodgerBlue;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+    margin-top: 0%;
+    position: relative;
+
+}
+
+#innerheader {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#heading {
+    font-size: 350%;
+    float: left;
+    margin-top: 1%;
+    color: white;
+/*    font-family: "Times New Roman";*/
+}
+
+nav {
+    width: 75%;
+    float: left;
+    margin-top: 2%;
+
+}
+
+nav > button:first-child {
+    margin-left: 30%;
+}
+
+nav > button {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid White;
+    border-radius: 20px;
+    padding: .7% 15px;
+    position: relative;
+    color: White;
+    font-size: 15px;
+    margin-left: 2%;
+}
+
+nav > button:hover {
+    background: White;
+    color: black;
+    font-size: 15px;
+    border-color: White;
+}
+
+#about-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    opacity: 0.9;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -5%;
+    margin-top: 16%;
+}
+
+#about-dropdown-content a {
+    color: black;
+    opacity: 1.0;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: -5%;
+}
+
+#about-dropdown-content a:hover {
+    background: Black;
+    color: white;
+
+}
+
+nav > button:hover #about-dropdown-content {
+    display: block;
+}

@@ -1,4 +1,4 @@
-<html>
+ <!DOCTYPE html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -15,6 +15,7 @@
             messagingSenderId: "871298628058"
         };
         firebase.initializeApp(config);
+
     </script>
 
 
@@ -24,106 +25,50 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.js"></script>
     <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.1.1/firebaseui.css" />
+    <link rel="stylesheet" type="text/css" href="survey.css">
 
-
-
-
-
-    <style>
-        /*
-        #sizeType {
-            height: 30vh;
-            background-color: antiquewhite;
-            padding: 0vh;
-            font-size: 50px;
-        }
-
-        #plantType {
-            height: 30vh;
-            background-color: khaki;
-
-        }
-*/
-        #btn {
-            background-color: #4CAF50;
-            /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-        }
-
-        .user-select {
-            position: relative;
-            font-family: Arial;
-            margin: 5vh;
-        }
-
-        .user-select select {
-            display: none;
-            /*hide original SELECT element:*/
-        }
-
-        .select-selected {
-            background-color: DodgerBlue;
-        }
-
-        /*style the arrow inside the select element:*/
-        .select-selected:after {
-            position: absolute;
-            content: "";
-            top: 14px;
-            right: 10px;
-            width: 0;
-            height: 0;
-            border: 6px solid transparent;
-            border-color: #fff transparent transparent transparent;
-        }
-
-        /*point the arrow upwards when the select box is open (active):*/
-        .select-selected.select-arrow-active:after {
-            border-color: transparent transparent #fff transparent;
-            top: 7px;
-        }
-
-        /*style the items (options), including the selected item:*/
-        .select-items div,
-        .select-selected {
-            color: #ffffff;
-            padding: 8px 16px;
-            border: 1px solid transparent;
-            border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        /*style items (options):*/
-        .select-items {
-            position: absolute;
-            background-color: DodgerBlue;
-            top: 100%;
-            left: 0;
-            right: 0;
-            z-index: 99;
-        }
-
-        /*hide the items when the select box is closed:*/
-        .select-hide {
-            display: none;
-        }
-
-        .select-items div:hover,
-        .same-as-selected {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 
 <body>
 
+    <div id="header">
+
+        <div id="innerheader" >
+            <span id="heading" class="font">GardenAid</span>
+            <nav>
+                <button onclick="Home" class="nav1">Home</button>
+                <button onclick="Garden Planning" class="nav1">Garden Planning</button>
+               
+            </nav>
+        </div>
+    </div>
+
+    <!--
+            <div id="toptext">
+            <div>
+            <h2>large layout</h2>
+            </div>
+            <div>
+            <h2>medium layout</h2>
+            </div>
+            <div>
+            <h2>small layout</h2>
+            </div>
+            </div>-->
+    <div id="image-container">
+        <div id=sizeimages>
+            <img src="./images/largelayout.png" height="200px" width="17%" alt="img" class="image">
+            <img src="./images/mediumlayout.png" height="200px" width="17%" alt="img" class="image">
+            <img src="./images/smalllayout.png" height="200px" width="17%" alt="img" class="image">
+        </div>
+
+        <div id=gardenerimages>
+            <img src="./images/herbs.jpg" height="200px" width="17%" alt="img" class="image">
+            <img src="./images/80404284_XS.jpg" height="200px" width="17%" alt="img" class="image">
+            <img src="./images/bangforyobuck.jpg" height="200px" width="16%" alt="img" class="image">
+        </div>
+    </div>
+<div id="rightSel">
     <div class="user-select" style="width:200px;">
         <select id="user1">
             <option value="0">Select Size:</option>
@@ -134,7 +79,7 @@
         </select>
     </div>
 
-    <div class="user-select" style="width:200px;">
+    <div class="user-select" id="user-select-2" style="width:200px;">
         <select id="user2">
             <option value="0">Select plant:</option>
             <option value="1">Herb Plant</option>
@@ -233,10 +178,11 @@
         /*if the user clicks anywhere outside the select box,
         then close all select boxes:*/
         document.addEventListener("click", closeAllSelect);
-    </script>
-   
-    <button id="btn">Show selected</button>
 
+    </script>
+
+    <button id="btn">Click Me!</button>
+    </div>
     <div id="display"></div>
     <div id="display2"></div>
     <script>
@@ -250,30 +196,30 @@
 
             if (document.getElementById('display').innerHTML = value == 1) {
                 if (value2 == 1) {
-                    window.location.href = "largegardenlayout.html";
+                    window.location.href = "../DoneWithJS/largegardenlayoutherb.html";
                 } else if (value2 == 2) {
-                    window.location.href = "mediumgardenlayout.html";
+                    window.location.href = "../DoneWithJS/largegardenlayoutharvest.html";
 
                 } else if (value2 == 3) {
-                    window.location.href = "smallgardenlayout.html";
+                    window.location.href = "../DoneWithJS/largegardenlayoutnew.html";
                 }
             } else if (document.getElementById('display').innerHTML = value == 2) {
                 if (value2 == 1) {
-                    window.location.href = "largegardenlayout.html";
+                    window.location.href = "../DoneWithJS/mediumgardenlayoutherb.html";
                 } else if (value2 == 2) {
-                    window.location.href = "mediumgardenlayout.html";
+                    window.location.href = "../DoneWithJS/mediumgardenlayoutharvest.html";
 
                 } else if (value2 == 3) {
-                    window.location.href = "smallgardenlayout.html";
+                    window.location.href = "../DoneWithJS/mediumgardenlayoutnew.html";
                 }
             } else if (document.getElementById('display').innerHTML = value == 3) {
                 if (value2 == 1) {
-                    window.location.href = "largegardenlayout.html";
+                    window.location.href = "../DoneWithJS/smallgardenlayoutherb.html";
                 } else if (value2 == 2) {
-                    window.location.href = "mediumgardenlayout.html";
+                    window.location.href = "../DoneWithJS/smallgardenlayoutharvest.html";
 
                 } else if (value2 == 3) {
-                    window.location.href = "smallgardenlayout.html";
+                    window.location.href = "../DoneWithJS/smallgardenlayoutnew.html";
                 }
 
             } else {
@@ -286,50 +232,9 @@
         }
 
         document.getElementById('btn').addEventListener('click', show_selected);;
+
     </script>
 
+</body>
 
-
-
-
-
-    <script>
-        //        document.getElementById('user1').addEventListener('submit', submitForm);
-        //
-        //        function submitForm(e) {
-        //
-        //                        var size = document.getElementsByClassName("same-as-selected").value;
-        //                                var type = document.getElementsByClassName("same-as-selected").value;
-        //
-        //
-        //            console.log(showing);
-        //                   console.log(type);
-        //            console.log(program);
-        //
-        //            var firebase = app_firebase;
-        //
-        //            firebase.auth().onAuthStateChanged(function(user) {
-        //                console.log(size);
-        //                console.log(type);
-        //                console.log(user.uid);
-        //
-        //                Update database with the profile info collected for the user
-        //                var promise = firebase.database().ref('users/' + user.uid).update({
-        //                    "type": type,
-        //                    "size": size
-        //
-        //                });
-        //
-        //            When the databate update is done, then go to main.html
-        //                promise.then(function() {
-        //                    window.location.href = "main.html";
-        //                });
-        //            });
-        //        };
-    </script>
-
-
-
-
-
-</body></html>
+</html>
