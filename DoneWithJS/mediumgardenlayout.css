@@ -31,33 +31,34 @@ body{
     color: lime;
     font-family: "Times New Roman";
 }
-nav{
-    width: 75%;
-    float: left;
-    margin-top: 2%;
-    
-}
-nav>button:first-child{
-    margin-left: 30%;
-}
-nav>button{
-    text-decoration: none;
-    display: inline-block;
-    background: transparent;
-    border: 2px solid White;
-    border-radius: 20px;
-    padding: .7% 15px;
-    position: relative;
-    color: White;
-    font-size: 15px;
-    margin-left: 2%;
-}
-nav>button:hover{
-    background: White;
-    color: black;
-    font-size: 15px;
-    border-color: White;
-}
+        nav{
+            width: 75%;
+            float: left;
+            margin-top: 2%;
+            
+        }
+        nav>button:first-child{
+            margin-left: 50%;
+        }
+        nav>button{
+            text-decoration: none;
+            display: inline-block;
+            background: transparent;
+            border: 2px solid White;
+            border-radius: 20px;
+            padding: .7% 15px;
+            position: relative;
+            color: White;
+            font-size: 15px;
+            margin-left: 8%;
+        }
+        nav>button:hover{
+            background: White;
+            color: black;
+            font-size: 15px;
+            border-color: White;
+            cursor: pointer;
+        }
 #about-dropdown-content{
 display: none;
 position: absolute;
@@ -223,11 +224,11 @@ a>p{
         }
 
         #pot-inner-square{
-        height:60%;
-        width:80%;
+        height:100%;
+        width:100%;
         position:relative;
-        top:20%;
-        left:15%;
+        top:0%;
+        left:0%;
         }
 
         #pot-inner-square-2{
@@ -369,8 +370,9 @@ li{
     float: left;
     border: 3px black solid;
     display: block;
+    border-radius: 20px;
 }     
-    #button1 {
+#button1 {
     background-color: #4CAF50;
     /* Green */
     border: none;
@@ -380,11 +382,12 @@ li{
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: 20px;
 
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     /* Safari */
     transition-duration: 0.4s;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}    
+}
 </style>              

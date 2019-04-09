@@ -19,18 +19,18 @@
             width: cover;
             background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
             background-repeat: no-repeat;
-            background-size: 120% 100%;
+            background-size: 100% 100%;
             position: relative;
-            height: 80vh;
+            height: 90vh;
         }
 
         #header {
             height: 100px;
             width: 100%;
-            background: black;
-            opacity: 0.4;
+            background: rgb(0, 0, 0, 0.4);
             margin-top: 0%;
             float: left;
+            height: 10vh;
         }
 
         #innerheader {
@@ -46,19 +46,16 @@
             color: greenyellow;
             font-family: "Times New Roman";
         }
-
-        nav {
+        nav{
             width: 75%;
             float: left;
             margin-top: 2%;
-
+            
         }
-
-        nav>button:first-child {
-            margin-left: 30%;
+        nav>button:first-child{
+            margin-left: 50%;
         }
-
-        nav>button {
+        nav>button{
             text-decoration: none;
             display: inline-block;
             background: transparent;
@@ -68,14 +65,14 @@
             position: relative;
             color: White;
             font-size: 15px;
-            margin-left: 2%;
+            margin-left: 8%;
         }
-
-        nav>button:hover {
+        nav>button:hover{
             background: White;
             color: black;
             font-size: 15px;
             border-color: White;
+            cursor: pointer;
         }
 
         #about-dropdown-content {
@@ -176,10 +173,10 @@
             margin-top: 5%;
         }
 
-        #secondpageimage1 {
+        #secondpageimage1{
             margin-left: 6%;
             margin-top: 4%;
-
+            height: 60vh;
         }
 
         #secondpageabout {
@@ -227,10 +224,11 @@
             opacity: 0.8;
         }
 
-        #secondpageimage2 {
+        #secondpageimage2{
             margin-right: 5%;
             float: right;
             margin-top: -10%;
+            height: 60vh;
         }
 
         #footer {
@@ -247,6 +245,13 @@
             text-align: center;
             font-size: 25px;
             color: white;
+        }
+        #banner{
+            margin-left: -21%;
+            margin-top: -20%;
+        }
+        .button{
+            cursor: pointer;
         }
     </style>
     <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
@@ -265,10 +270,10 @@
                 <span id="heading">Garden-Aid</span>
                 <nav>
                     <button onclick="Home">Home</button>
-                    <button onclick="Garden Planning">Garden Planning</button>
-                    <button onclick="News">News</button>
-                    <button onclick="Photos of the Day">Photos of the Day</button>
-                    <button onclick="About">About <div id="about-dropdown-content">
+                    <button onclick="window.location.href='survey.html'">Garden Planning</button>
+                    <!--<button onclick="News">News</button>
+                    <button onclick="Photos of the Day">Photos of the Day</button>-->
+                    <button onclick="window.location.href='Aboutus.html'">About <div id="about-dropdown-content">
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Who Are We</a>
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">Contacts</a>
                             <a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#">More about us</a>
@@ -317,7 +322,7 @@
         </div>
         <div id="secondpagethirdpart">
             <div id="secondpagegardenplan">Garden Planner
-                <div id="gardenplanhref"><a href="file:///F:/Programm.%20Dip/Projects1_1930/Gardenaid.html#gardenplanhref">Start Garden Planning</a></div>
+                <div id="gardenplanhref"><a href="survey.html">Start Garden Planning</a></div>
             </div>
             <img id="secondpageimage2" src="./images/garden1.jpeg" alt="image">
         </div>
