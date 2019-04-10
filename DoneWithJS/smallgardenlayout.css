@@ -66,7 +66,7 @@ nav > button {
     position: relative;
     color: White;
     font-size: 15px;
-    margin-left: 8%;
+    margin-left: 5%;
 }
 
 nav > button:hover {
@@ -194,13 +194,13 @@ a > p {
 }
 
 #pot-square-2 {
-    width: 60%;
+    width: 70%;
     background: rgb(0, 255, 0, 0);
     border: 3px solid rgb(0, 255, 0, 0.6);
     margin: 15%;
     position: relative;
-    top: 20%;
-    left: 5%;
+    top: -5%;
+    left: 0%;
     border-radius: 20px;
     height: 20vh;
 }
@@ -396,16 +396,6 @@ a > p {
     position: relative;
 }
 
-#pot-square-2 {
-    width: 60%;
-    background: rgb(0, 255, 0, 0);
-    border: 3px solid rgb(0, 255, 0, 0.6);
-    margin: 15%;
-    position: relative;
-    top: 0%;
-    left: 5%;
-    border-radius: 20px;
-}
 
 
 #pot-inner-square-2 {
@@ -441,8 +431,8 @@ a > p {
     border: 3px solid rgb(0, 255, 0, 0.6);
     border-radius: 20px;
     height: 40%;
-    width: 40%;
-    left: -25%;
+    width: 50%;
+    left: 0%;
     margin: 0 auto;
 }
 
@@ -525,6 +515,38 @@ a > p {
     line-height: 200%;
     font-size: 120%;
 
+}
+#pot-inner-square #listofplant1{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#pot-inner-square #listofplant2{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#pot-inner-square #listofplant3{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+#pot-inner-square #listofplant4{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#pot-inner-square #listofplant5{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#pot-inner-square #listofplant6{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#pot-inner-square #listofplant7{
+    margin-left: 10%;
+    margin-top: 20%;
+}
+#pot-inner-square #listofplant8{
+    margin-left: 10%;
+    margin-top: 20%;
 }
 
 #showit {}
