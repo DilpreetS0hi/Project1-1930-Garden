@@ -46,18 +46,14 @@ body {
 }
 
 nav {
-    width: 50%;
-    float: right;
-    margin: 5vh;
-    height: 30vh;
-
+    width: 73%;
+    float: left;
+    margin-top: 2%;
 }
-
-nav > button:first-child {
+nav>button:first-child{
     margin-left: 50%;
 }
-
-nav > button {
+nav>button{
     text-decoration: none;
     display: inline-block;
     background: transparent;
@@ -67,7 +63,7 @@ nav > button {
     position: relative;
     color: White;
     font-size: 15px;
-    margin-left: 8%;
+    margin-left: 4%;
 }
 
 nav > button:hover {
@@ -205,12 +201,13 @@ a > p {
     -- > margin-top: 0%;
     margin-bottom: 2%;
     margin-left: -5%;
+    top: -5%;
 }
 
 
 #pot-square {
-    width: 107px;
-    height: 107px;
+    width: 125px;
+    height: 120px;
     border: 3px solid rgb(0, 255, 0, 0.9);
     background: rgb(10, 255, 10, 00);
     margin: 5%;
@@ -218,8 +215,8 @@ a > p {
 }
 
 #pot-square {
-    margin-left: 15%;
-    margin-top: 3%;
+    margin-left: 10%;
+    margin-top: 8%;
 }
 
 #pot-square:hover {
@@ -269,11 +266,11 @@ a > p {
 #pots {
     position: absolute;
     left: 2%;
-    top: 30%;
+    top: 34%;
     background-color: rgb(0, 255, 0, 0.3);
     border: 3px solid rgb(0, 255, 0, 0.6);
     border-radius: 20px;
-    height: 45%;
+    height: 65%;
     width: 55%;
 }
 
@@ -302,9 +299,9 @@ a > p {
 #other-veg-container {
     display: flex;
     width: 35%;
-    height: 20%;
+    height: 30%;
     position: absolute;
-    left: 2%;
+    left: 10%;
 
     background-color: rgb(0, 255, 0, 0.3);
     border: 3px solid rgb(0, 255, 0, 0.6);
@@ -408,5 +405,37 @@ li {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+#pot-square #listofplant1{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant2{
+    margin-left: 12%;
+    margin-top: 7%;
+}
+#pot-square #listofplant3{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant4{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant5{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant6{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant7{
+    margin-left: 10%;
+    margin-top: 8%;
+}
+#pot-square #listofplant8{
+    margin-left: 10%;
+    margin-top: 8%;
+}
 
 </style >
