@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+#font {
+    font-family: 'Lato', sans-serif;
+    font-size: 300%;
+
+
+}
+
+.font {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+#firstpage {
+    width: cover;
+    background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 90vh;
+}
+
+#header {
+    height: 100px;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.4);
+    margin-top: 0%;
+    float: left;
+    height: 10vh;
+    opacity: 0.4;
+}
+
+#innerheader {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#heading {
+    font-size: 400%;
+    width: 25%;
+    height: 0vh;
+    float: left;
+    margin-top: 1%;
+    color: #85ff2f;
+    font-family: 'Lato', sans-serif;
+}
+
+nav {
+    width: 75%;
+    float: left;
+    margin-top: 2%;
+
+}
+
+nav > button:first-child {
+    margin-left: 50%;
+}
+
+nav > button {
+    text-decoration: none;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid White;
+    border-radius: 20px;
+    padding: .7% 15px;
+    position: relative;
+    color: White;
+    font-size: 20px;
+    margin-left: 2%;
+    transform: translateY(1vh);
+}
+
+nav > button:hover {
+    background: White;
+    color: black;
+    font-size: 15px;
+    border-color: White;
+    cursor: pointer;
+}
+
+#about-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    opacity: 0.9;
+    min-width: 116px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -5%;
+    margin-top: 16%;
+}
+
+#about-dropdown-content a {
+    color: black;
+    opacity: 1.0;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+    margin-top: -5%;
+}
+
+#about-dropdown-content a:hover {
+    background: Black;
+    color: white;
+
+}
+
+nav > button:hover #about-dropdown-content {
+    display: block;
+}
+
+#middle {
+    margin-left: 40%;
+}
+
+#middle > button {
+    display: inline-block;
+    background: rgb(63, 158, 248, 1.0);
+    border: 2px solid 3FCCF8;
+    height: 15vh;
+    width: 30%;
+    margin-top: 35%;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fafafa;
+    margin-bottom: 25%;
+    padding: 2vh 2vh 1vh 2vh;
+    font-size: 150%;
+    text-align: center;
+}
+
+#middle > button:hover {
+    background: rgb(63, 158, 248, 0.65);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+button > p {
+    margin-top: 4%;
+    font-size: 25px;
+}
+
+#firstpagemaincontent1 {
+    font-style: italic;
+    font-size: 50px;
+    font-stretch: expanded;
+    color: white;
+    margin-left: 0%;
+    position: absolute;
+    margin-top: 22%;
+}
+
+#firstpagemaincontent2 {
+    position: absolute;
+    margin-top: 28%;
+    color: white;
+    margin-left: 4%;
+}
+
+#secondpageline1 {
+    font-size: 45px;
+    margin-left: 10%;
+    margin-top: 3%;
+    font-weight: 600;
+}
+
+#secondpageline2 {
+    font-size: 25px;
+    margin-left: 18%;
+    margin-right: 26%;
+    text-align: center;
+    margin-top: 1.5%;
+    color: gray;
+}
+
+#secondpagesecondpart {
+    margin-top: 5%;
+}
+
+#secondpageimage1 {
+    margin-left: 6%;
+    margin-top: 4%;
+    height: 60vh;
+    /*    width: 5%;*/
+}
+
+#secondpageabout {
+    font-size: 40px;
+    margin-left: 68%;
+    margin-top: -22%;
+    font-weight: bold;
+}
+
+#secondpageaboutPara {
+    margin-top: 3%;
+    margin-left: 60%;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 15%;
+}
+
+#secondpagethirdpart {
+    margin-top: 30%;
+}
+
+#secondpagegardenplan {
+    margin-top: -10%;
+    margin-left: 20%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#gardenplanhref {
+    margin-top: 5%;
+    margin-left: -3%;
+    background: #3FCCF8;
+    margin-right: 76%;
+    border-radius: 30px;
+    padding: 1vh 1vh 1vh 0vh;
+    text-align: center;
+}
+
+#gardenplanhref > a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-left: 7%;
+    color: white;
+}
+
+#gardenplanhref:hover {
+    opacity: 0.8;
+}
+
+#secondpageimage2 {
+    margin-right: 5%;
+    float: right;
+    margin-top: -15%;
+    height: 60vh;
+}
+
+#footer {
+    margin-top: 30%;
+    height: 90px;
+    background: Black;
+}
+
+#footerfiller {
+    height: 30px;
+}
+
+#footercontent {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+}
+
+#btnUpdateProfile h1 {
+    margin-top: 6%;
+}
+
+#btnUpdateProfile:active {
+    outline: none;
+}

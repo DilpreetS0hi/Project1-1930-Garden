@@ -13,7 +13,7 @@ body {
 }
 
 #firstpage {
-    /*    background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');*/
+
     background-repeat: no-repeat;
     background-size: 120% 100%;
     position: absolute;
@@ -516,35 +516,43 @@ a > p {
     font-size: 120%;
 
 }
-#pot-inner-square #listofplant1{
+
+#pot-inner-square #listofplant1 {
     margin-left: 10%;
     margin-top: 10%;
 }
-#pot-inner-square #listofplant2{
+
+#pot-inner-square #listofplant2 {
     margin-left: 10%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant3{
+
+#pot-inner-square #listofplant3 {
     margin-left: 10%;
     margin-top: 10%;
 }
-#pot-inner-square #listofplant4{
+
+#pot-inner-square #listofplant4 {
     margin-left: 10%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant5{
+
+#pot-inner-square #listofplant5 {
     margin-left: 10%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant6{
+
+#pot-inner-square #listofplant6 {
     margin-left: 10%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant7{
+
+#pot-inner-square #listofplant7 {
     margin-left: 10%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant8{
+
+#pot-inner-square #listofplant8 {
     margin-left: 10%;
     margin-top: 20%;
 }
