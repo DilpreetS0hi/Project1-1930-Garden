@@ -13,7 +13,7 @@ body {
 }
 
 #firstpage {
-
+    /*    background-image: url('https://img00.deviantart.net/a72c/i/2014/352/d/b/the_dark_kingdom___secret_garden_by_silberius-d8ab12e.jpg');*/
     background-repeat: no-repeat;
     background-size: 120% 100%;
     position: absolute;
@@ -155,7 +155,7 @@ a > p {
     margin-left: 4%;
 }
 
-#gardenplanhref {
+<<<<<<< HEAD #gardenplanhref {
     margin-top: 5%;
     margin-left: -3%;
     background: #3FCCF8;
@@ -183,12 +183,12 @@ a > p {
 
 
 #gardencontent {
-    width: 50%;
-    height: 600px;
-    margin-left: 25%;
+    width: 80%;
+    height: 700px;
+    margin-left: 10%;
     margin-top: 4%;
-    background-color: rgb(0, 0, 0, 0.1);
-    border: 3px solid rgb(0, 255, 0, 0.6);
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 20px;
     position: relative;
 }
@@ -221,9 +221,9 @@ a > p {
     left: 15%;
 }
 
-#pot-square-2:hover {
+/*#pot-square-2:hover {
     background: rgb(0, 255, 0, 0.5);
-}
+}*/
 
 .row {
     display: flex;
@@ -390,8 +390,8 @@ a > p {
     height: 600px;
     margin-left: 25%;
     margin-top: 4%;
-    background-color: rgb(0, 0, 0, 0.1);
-    border: 3px solid rgb(0, 255, 0, 0.6);
+    background-color: rgb(255, 255, 255, 0.1);
+    border: 3px solid rgb(0, 0, 0);
     border-radius: 20px;
     position: relative;
 }
@@ -405,10 +405,10 @@ a > p {
     top: 20%;
     left: 15%;
 }
-
+/*
 #pot-square-2:hover {
     background: rgb(0, 255, 0, 0.5);
-}
+}*/
 
 .row {
     display: flex;
@@ -427,7 +427,7 @@ a > p {
 #veg-container2 {
     position: relative;
     top: 5%;
-    background-color: rgb(0, 255, 0, 0.3);
+    background-color: rgb(255, 255, 255, 0.1);
     border: 3px solid rgb(0, 255, 0, 0.6);
     border-radius: 20px;
     height: 40%;
@@ -516,43 +516,35 @@ a > p {
     font-size: 120%;
 
 }
-
-#pot-inner-square #listofplant1 {
+#pot-inner-square #listofplant1{
     margin-left: 10%;
     margin-top: 10%;
 }
-
-#pot-inner-square #listofplant2 {
+#pot-inner-square #listofplant2{
     margin-left: 10%;
     margin-top: 20%;
 }
-
-#pot-inner-square #listofplant3 {
+#pot-inner-square #listofplant3{
     margin-left: 10%;
     margin-top: 10%;
 }
-
-#pot-inner-square #listofplant4 {
+#pot-inner-square #listofplant4{
     margin-left: 10%;
     margin-top: 20%;
 }
-
-#pot-inner-square #listofplant5 {
+#pot-inner-square #listofplant5{
     margin-left: 10%;
     margin-top: 20%;
 }
-
-#pot-inner-square #listofplant6 {
+#pot-inner-square #listofplant6{
     margin-left: 10%;
     margin-top: 20%;
 }
-
-#pot-inner-square #listofplant7 {
+#pot-inner-square #listofplant7{
     margin-left: 10%;
     margin-top: 20%;
 }
-
-#pot-inner-square #listofplant8 {
+#pot-inner-square #listofplant8{
     margin-left: 10%;
     margin-top: 20%;
 }

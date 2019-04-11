@@ -233,7 +233,7 @@ a > p {
     height: 600px;
     margin-left: 25%;
     margin-top: 4%;
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255, 0.1);
     border: 3px solid rgb(0, 255, 0, 0.6);
     border-radius: 20px;
     position: relative;
@@ -242,7 +242,7 @@ a > p {
 #pot-square {
     width: 15%;
     height: 80%;
-    background: rgb(0, 255, 0, 0.5);
+    background-color: rgb(255, 255, 255, 0.1);
     border: 2px solid rgb(0, 255, 0, 0.5);
     margin: 5%;
     position: relative;
@@ -277,10 +277,10 @@ a > p {
     top: 20%;
     left: 15%;
 }
-
+/*
 #pot-square-2:hover {
     background: rgb(0, 255, 0, 0.5);
-}
+}*/
 
 .row {
     display: flex;
@@ -308,7 +308,7 @@ a > p {
     position: absolute;
     left: 12.5vh;
     top: 0%;
-    background-color: rgb(0, 255, 0, 0.3);
+    background-color: rgb(255, 255, 255, 0.1);
     height: 60vh;
     width: 70vh;
     border-radius: 20px;
