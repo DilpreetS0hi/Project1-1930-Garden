@@ -3,8 +3,6 @@
 #font {
     font-family: 'Lato', sans-serif;
     font-size: 300%;
-
-
 }
 
 
@@ -65,8 +63,10 @@ nav > button {
     padding: .7% 15px;
     position: relative;
     color: White;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 5%;
+    font-family: 'Lato', sans-serif;
+    transform: translateY(3vh);
 }
 
 nav > button:hover {
@@ -155,7 +155,7 @@ a > p {
     margin-left: 4%;
 }
 
-<<<<<<< HEAD #gardenplanhref {
+ #gardenplanhref {
     margin-top: 5%;
     margin-left: -3%;
     background: #3FCCF8;
@@ -549,4 +549,3 @@ a > p {
     margin-top: 20%;
 }
 
-#showit {}

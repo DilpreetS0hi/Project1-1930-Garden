@@ -9,7 +9,7 @@
 
 body {
     margin: 0 auto;
-        position: relative;
+    position: relative;
 
 }
 
@@ -53,10 +53,12 @@ nav {
     float: left;
     margin-top: 2%;
 }
-nav>button:first-child{
+
+nav > button:first-child {
     margin-left: 50%;
 }
-nav>button{
+
+nav > button {
     text-decoration: none;
     display: inline-block;
     background: transparent;
@@ -65,8 +67,10 @@ nav>button{
     padding: .7% 15px;
     position: relative;
     color: White;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 4%;
+    transform: translateY(3vh);
+
 }
 
 nav > button:hover {
@@ -234,7 +238,7 @@ a > p {
     margin-left: 25%;
     margin-top: 4%;
     background-color: rgb(255, 255, 255, 0.1);
-    border: 3px solid rgb(0, 255, 0, 0.6);
+    border: 3px solid black;
     border-radius: 20px;
     position: relative;
 }
@@ -277,6 +281,7 @@ a > p {
     top: 20%;
     left: 15%;
 }
+
 /*
 #pot-square-2:hover {
     background: rgb(0, 255, 0, 0.5);
@@ -410,7 +415,7 @@ li {
     height: 96.5%;
     width: 30%;
     left: -40%;
-    top:-115%;
+    top: -115%;
     position: relative;
     background-color: rgb(0, 255, 0, 0);
     float: left;
@@ -422,7 +427,7 @@ li {
 
 #button1 {
     background-color: #4CAF50;
-    /* Green */
+    margin: 1vh;
     border: none;
     color: white;
     padding: 15px 15px;
@@ -439,35 +444,42 @@ li {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#pot-inner-square #listofplant1{
+#pot-inner-square #listofplant1 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant2{
+
+#pot-inner-square #listofplant2 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant3{
+
+#pot-inner-square #listofplant3 {
     margin-left: 20%;
     margin-top: 10%;
 }
-#pot-inner-square #listofplant4{
+
+#pot-inner-square #listofplant4 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant5{
+
+#pot-inner-square #listofplant5 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant6{
+
+#pot-inner-square #listofplant6 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant7{
+
+#pot-inner-square #listofplant7 {
     margin-left: 20%;
     margin-top: 20%;
 }
-#pot-inner-square #listofplant8{
+
+#pot-inner-square #listofplant8 {
     margin-left: 10%;
     margin-top: 20%;
 }

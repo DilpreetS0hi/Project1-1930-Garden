@@ -50,10 +50,12 @@ nav {
     float: left;
     margin-top: 2%;
 }
-nav>button:first-child{
+
+nav > button:first-child {
     margin-left: 50%;
 }
-nav>button{
+
+nav > button {
     text-decoration: none;
     display: inline-block;
     background: transparent;
@@ -62,8 +64,10 @@ nav>button{
     padding: .7% 15px;
     position: relative;
     color: White;
-    font-size: 15px;
+    font-size: 20px;
     margin-left: 4%;
+    transform: translateY(3vh);
+
 }
 
 nav > button:hover {
@@ -197,7 +201,7 @@ a > p {
     position: relative;
     border-radius: 20px;
     background-color: rgb(0, 255, 0, 0);
-    <!--border: 3px solid rgb(0, 255, 0, 0);
+    < !--border: 3px solid rgb(0, 255, 0, 0);
     -- > margin-top: 0%;
     margin-bottom: 2%;
     margin-left: -5%;
@@ -218,6 +222,7 @@ a > p {
     margin-left: 10%;
     margin-top: 8%;
 }
+
 /*
 #pot-square:hover {
     background: rgb(0, 255, 0, 0.6);
@@ -270,8 +275,8 @@ a > p {
     background-color: rgb(255, 255, 255, 0.1);
     border: 3px solid rgb(0, 255, 0, 0.6);
     border-radius: 20px;
-    height: 65%;
-    width: 55%;
+    height: 60%;
+    width: 63%;
 }
 
 #pot-button {
@@ -375,7 +380,7 @@ li {
     border: 3px black solid;
     display: block;
     border-radius: 20px;
-     padding: 2vh;
+    padding: 2vh;
 }
 
 .bottonClick {
@@ -387,7 +392,7 @@ li {
 
 #button1 {
     background-color: #4CAF50;
-    /* Green */
+    margin: 1vh;
     border: none;
     color: white;
     padding: 15px 15px;
@@ -396,7 +401,6 @@ li {
     display: inline-block;
     font-size: 16px;
     border-radius: 20px;
-
     cursor: pointer;
     -webkit-transition-duration: 0.4s;
     /* Safari */
@@ -404,35 +408,42 @@ li {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#pot-square #listofplant1{
+#pot-square #listofplant1 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant2{
+
+#pot-square #listofplant2 {
     margin-left: 12%;
     margin-top: 7%;
 }
-#pot-square #listofplant3{
+
+#pot-square #listofplant3 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant4{
+
+#pot-square #listofplant4 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant5{
+
+#pot-square #listofplant5 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant6{
+
+#pot-square #listofplant6 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant7{
+
+#pot-square #listofplant7 {
     margin-left: 10%;
     margin-top: 8%;
 }
-#pot-square #listofplant8{
+
+#pot-square #listofplant8 {
     margin-left: 10%;
     margin-top: 8%;
 }
