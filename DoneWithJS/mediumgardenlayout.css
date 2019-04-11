@@ -49,17 +49,14 @@ body {
 }
 
 nav {
-    width: 75%;
+    width: 73%;
     float: left;
     margin-top: 2%;
-
 }
-
-nav > button:first-child {
+nav>button:first-child{
     margin-left: 50%;
 }
-
-nav > button {
+nav>button{
     text-decoration: none;
     display: inline-block;
     background: transparent;
@@ -69,7 +66,7 @@ nav > button {
     position: relative;
     color: White;
     font-size: 15px;
-    margin-left: 5%;
+    margin-left: 4%;
 }
 
 nav > button:hover {
