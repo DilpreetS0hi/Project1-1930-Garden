@@ -1,3 +1,4 @@
+//show the string from database.
 document.getElementById("button1").addEventListener("click", function () {
     Showlist("harvest with kitchen window");
 
@@ -13,7 +14,7 @@ function Showlist(catergory) {
 
 
     promise.then(function () {
-        DisplayList(list); //JSON object
+        DisplayList(list); 
     });
 }
 
@@ -45,5 +46,4 @@ function DisplayImage(picturefile) {
     x.setAttribute("ondragstart", "drag(event)");
     var pa = document.getElementById("showit");
     pa.appendChild(x);
-    //                        document.body.appendChild(x);
 }

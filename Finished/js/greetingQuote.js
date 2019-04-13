@@ -14,16 +14,15 @@
     firebase.auth().onAuthStateChanged(function(user){
     	if (user){
           	var userName=user.displayName;			  // grab name of user
-			banner.innerText = "Hello "+ userName;    // update with Personalized Hello
+			banner.innerText = "Hello "+ userName;    // update with input name
 
-	  		//display quote from database 	
+	  		//display name from database 	
 	  		var dbRef = firebase.database().ref('quotes/count');
 	  		var promise = dbRef.once('value', function(snap) {
 	  			 numQuotes = snap.val();
 	  			 localStorage.setItem("num", numQuotes);
 	  			 });
-			//console.log (localStorage.getItem("num"));
-	  		//random number between 1 and num
+		
 	  		promise.then(function(){
 	  			rand = Math.floor(Math.random()* localStorage.getItem("num"))+1;
 	  			localStorage.setItem("rand", rand);

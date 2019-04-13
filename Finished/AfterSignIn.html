@@ -34,7 +34,7 @@
         </div>
         <div id="middle">
             <div id="firstpagemaincontent1">
-                <script src="setup_firebase_yourname.js"></script>
+                <script src="./js/setup_firebase_yourname.js"></script>
 
                 <h1 id="banner" class="font"> </h1>
                 <h1 id="quote"> </h1>
@@ -49,6 +49,7 @@
                             window.location.href = 'index.html';
                         });
                     });
+
                 </script>
 
                 <script src="./js/create_user.js"></script>
@@ -87,6 +88,7 @@
     <script>
         // Initialize the FirebaseUI Widget using Firebase.
         var ui = new firebaseui.auth.AuthUI(firebase.auth());
+
     </script>
 
 
@@ -126,9 +128,13 @@
             // Privacy policy url.
             privacyPolicyUrl: 'tryMe.html'
         };
+
     </script>
     <script>
         // The start method will wait until the DOM is loaded.
         ui.start('#firebaseui-auth-container', uiConfig);
+
     </script>
-</body></html>
+</body>
+
+</html>

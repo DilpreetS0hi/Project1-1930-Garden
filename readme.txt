@@ -1,0 +1,1 @@
+Inside of this project folder, we and one folder called finished, which contains all the source code, css, image, and js file. Readme.md is the file for GitHub which is about the purpose for that GitHub. Our html file is here, and we have the image folder which has all the images file on it, js folder which contain all the js file.

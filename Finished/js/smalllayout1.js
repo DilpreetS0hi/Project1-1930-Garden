@@ -1,3 +1,4 @@
+//show the string from database.
 document.getElementById("button1").addEventListener("click", function () {
     Showlist("harvest with kitchen window");
 
@@ -13,7 +14,7 @@ function Showlist(catergory) {
 
 
     promise.then(function () {
-        DisplayList(list); //JSON object
+        DisplayList(list);
     });
 }
 
@@ -28,16 +29,7 @@ function DisplayList(list) {
     console.log(list);
 
     for (x in list) {
-        //                            var bottonClick = document.createElement("button");
 
-        //                            bottonClick.appendChild(inside);
-        //                            var node = document.createTextNode(x);
-        //                            inside.appendChild(node);
-        //                            inside.setAttribute("id", "listofplant" + indexofId);
-        //                            inside.setAttribute("draggable", "true");
-        //                            inside.setAttribute("ondragstart", "drag(event)");
-
-        //                            bottonClick.setAttribute("Class", "bottonClick");
         indexofId++;
         DisplayImage("./images/" + x + ".png");
     }
@@ -54,5 +46,4 @@ function DisplayImage(picturefile) {
     x.setAttribute("ondragstart", "drag(event)");
     var pa = document.getElementById("showit");
     pa.appendChild(x);
-    //                        document.body.appendChild(x);
 }
