@@ -1,3 +1,4 @@
+//This function allow user to drag the picture.
 function allowDrop(ev) {
     ev.preventDefault();
 }

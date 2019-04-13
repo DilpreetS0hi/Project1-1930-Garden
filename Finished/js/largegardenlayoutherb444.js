@@ -1,4 +1,4 @@
-//show the string from database. 
+// this function will show the string on the html file from, and it will create img to the HTML.   
 document.getElementById("button1").addEventListener("click", function () {
     Showlist("newbie with kitchen window");
 

@@ -1,4 +1,5 @@
-     document.getElementById("button1").addEventListener("click", function () {
+// this function will show the string on the html file from, and it will create img to the HTML.   
+document.getElementById("button1").addEventListener("click", function () {
          Showlist("newbie with kitchen window");
 
 
@@ -13,7 +14,7 @@
 
 
          promise.then(function () {
-             DisplayList(list); //JSON object
+             DisplayList(list); 
          });
      }
 
@@ -28,16 +29,7 @@
          console.log(list);
 
          for (x in list) {
-             //                            var bottonClick = document.createElement("button");
 
-             //                            bottonClick.appendChild(inside);
-             //                            var node = document.createTextNode(x);
-             //                            inside.appendChild(node);
-             //                            inside.setAttribute("id", "listofplant" + indexofId);
-             //                            inside.setAttribute("draggable", "true");
-             //                            inside.setAttribute("ondragstart", "drag(event)");
-
-             //                            bottonClick.setAttribute("Class", "bottonClick");
              indexofId++;
              DisplayImage("./images/" + x + ".png");
          }
@@ -54,5 +46,4 @@
          x.setAttribute("ondragstart", "drag(event)");
          var pa = document.getElementById("showit");
          pa.appendChild(x);
-         //                        document.body.appendChild(x);
      }
